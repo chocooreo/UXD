@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+
+    <title>Room | The Chanens Hotel</title>
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+    <link rel="stylesheet" href="stylerach.css">
+    <script src="const faders.js"></script>
+
+
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <img src="../Img/chanenslogo.PNG" class="logo">
+                <ul class="menulist">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                    <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                    <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                    <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                            AND EVENTS</a></li>
+                    <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                    <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide")
+        }
+
+        // Function to scroll back to the top of the page
+        function scrollToTop() {
+            // Scroll to the top of the page smoothly
+            window.scrollTo({
+                top: 1,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+    height: 650px;
+    object-fit: cover;" id="main">
+        <source src="../mp4/rach.mp4" type="video/mp4">
+    </video>
+    <div class="w3-col w3-container" style="width:100%">
+        <p class="home"><a href="chanens index.html" class="hyperlink">Home</a>><label>Room And Suites</label>
+    </div>
+
+
+    <div>
+        <h1 class="Dinningword">-ROOMS & SUITES-</h1><br>
+        <p class="headingtwo">Indulge in opulent accommodations and immerse yourself in breathtaking vistas of downtown
+            Singapore <br>
+            each time you book a room or suite at The Chanens Hotel.</p> <br>
+        <p class="headingtwo">Experience the allure of Chanens as you revel in expansive rooms and lavish suites
+            boasting mesmerizing <br>
+            views and a contemporary ambiance. Designed to cater to your every business or leisure accommodation <br>
+            requirement in Singapore. <br><br> <i class="headingthree">Reserve your stay now for an unforgettable
+                experience!</i>
+        </p>
+
+        <br><br><br>
+        <p class="luxury">sheer luxury</p><br><br><br>
+        <p class="history">History of Chanens Room & Suites</p>
+        <br>
+        <br>
+        <div class="hero">
+            <div class="center">
+
+                <p class="fade-in">
+                    Experience a curated collection of the finest entertainment, culture, cuisine, nightlife, and
+                    unforgettable experiences delivered right to your doorstep.
+                    Immerse yourself in the awe-inspiring splendor of the Chanens Building, a magnificent neoclassical
+                    masterpiece that has stood proudly since its construction in 2000.
+                    With its illustrious past spanning almost a century, the Chanens Building has played an integral
+                    role in shaping the captivating narrative of Singapore's vibrant history.
+
+                    <br><br>
+
+                    Today, the Chanens Hotel Singapore emerges as a captivating gem, having undergone a remarkable
+                    transformation into a breathtaking 500-room luxurious hotel. Imbued with timeless
+                    elegance and cultural significance, this enchanting establishment seamlessly blends the allure of
+                    the past with modern-day luxury.
+                    <i>Discover a captivating of luxurious and modern intertwine to create an unforgettable experience
+                        for every guest who walks through its doors.</i>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Rooms & clubs -->
+    <br><br><br>
+    <h2 class="title">ROOMS & CLUBS</h2>
+
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Deluxe Room</h2>
+
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/deluxe_room.jpg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Complimentary high-speed Wi-Fi and 24-hour room service</div>
+                </div>
+            </div>
+
+
+            <p class="suite">Enjoy a harmonious blend of contemporary amenities and sophisticated decor,
+                while you unwind in the comfort of your private sanctuary. </p>
+            <br>
+            <ul class="list1">
+                <li class="list">36-39 sqm on average</li>
+                <li class="list"> Up to 2 persons<a class="btn" href="viewdetails(deluxe).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 King or 2 Single beds</li>
+            </ul>
+
+        </div>
+
+
+
+        <div></div>
+        <div class="border">
+            <h2 class="room">Premier Room</h2>
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/background_img.jpg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Luxurious en-suite bathroom with rain shower and deluxe bath products</div>
+                </div>
+            </div>
+
+
+            <p class="suite">A high-end accommodation option, designed to provide guest
+                with upscale furnishings and decor, providing a indulgent experience for them. </p>
+            <br>
+            <ul class="list1">
+                <li class="list">40-45 sqm on average</li>
+                <li class="list">Up to 3 persons <a class="btn" href="viewdetails(premier).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 King or 2 Single beds </li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
+
+
+
+
+
+
+    <br><br><br>
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Chans Club Room</h2>
+
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/SIN_1011_original.jpg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">24-hour concierge service to cater to your every need</div>
+                </div>
+            </div>
+
+            <p class="suite"> Chans Club offers an enhanced level of luxury, personalized services, and exclusive
+                privileges, providing guests
+                with exceptional hospitality during their stay.</p>
+            <br>
+            <ul>
+                <li class="list">50-55 sqm on average </li>
+                <li class="list">Up to 3 persons<a class="btn" href="viewdetails(chanscr).html" target="blank">VIEW
+                        DETAILS</a> </li>
+                <li class="list">1 King or 2 Single beds</li>
+            </ul>
+
+
+        </div>
+        <div></div>
+
+        <div class="border">
+            <h2 class="room">Blossom Room</h2>
+
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/5-star-hotel-project-sara-ho-design-llc-img~a79172fa09234dda_4-1446-1-deba2d1.jpg"
+                    alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Mini refrigerator to keep your drinks and snacks cool</div>
+                </div>
+            </div>
+
+
+            <p class="suite">Take in a serene and refreshing retreat and immerse yourself in a tranquil and
+                floral-inspired environment in
+                the beauty of nature.</p>
+            <br>
+            <ul>
+                <li class="list">56-60 sqm on average </li>
+                <li class="list">Up to 3 persons <a class="btn" href="viewdetails(blossom).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 King or 2 Single beds </li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
+
+
+
+    <br><br>
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Chans Grand Room</h2>
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/5-star-hotel-project-sara-ho-design-llc-img~a79172fa09234dda_14-6073-1-deba2d1.jpg"
+                    alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">65-inch flat-screen TV with a wide selection of entertainment channels for your
+                        leisure</div>
+                </div>
+            </div>
+
+
+            <p class="suite">Featuring a separate bedroom and living area, Indulge in the lavishness of a soothing
+                comfort room for a truly rejuvenating stay with your loved ones.</p>
+            <br>
+            <ul>
+                <li class="list">61-65 sqm on average </li>
+                <li class="list">Up to 3 persons <a class="btn" href="viewdetails(chansgr).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 Living Room and 1 Bedroom </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Suites -->
+    <br><br><br>
+    <h2 class="titles">Suites</h2>
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Chans Premier Suite</h2>
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/premier1.jpg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">King-sized bed with premium linens, offering the ultimate in comfort and
+                        relaxation</div>
+                </div>
+            </div>
+
+            <p class="suite">Experience pure relaxation and comfort amidst the tastefully curated decor,
+                creating a space that is truly your own sanctuary.</p>
+            <br>
+            <ul>
+                <li class="list">66-70 sqm on average </li>
+                <li class="list">Up to 4 persons <a class="btn" href="viewdetails(chansps).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 Living Room and 1 Bedroom</li>
+            </ul>
+
+
+        </div>
+
+
+
+        <div></div>
+        <div class="border">
+            <h2 class="room">Chanens Executive Suite</h2>
+
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/executive.jpeg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Work desk with ergonomic chair for business travelers</div>
+                </div>
+            </div>
+
+            <p class="suite">Relish in the seamless fusion of modern conveniences and refined elegance,
+                as you luxuriate in the tranquil embrace of your exclusive haven. </p>
+            <br>
+            <ul class="list1">
+                <li class="list">71-75 sqm on average</li>
+                <li class="list">Up to 4 persons <a class="btn" href="viewdetails(chanenses).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 Living Room and 1 Bedroom</li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
+
+
+
+
+
+
+    <br><br><br>
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Esplande Suite</h2>
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/realistic.avif" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Expansive living and dining area, perfect for entertaining guests or enjoying
+                        private moments</div>
+                </div>
+            </div>
+
+
+            <p class="suite">Embark on a journey of pure opulence in our Esplanade Suite,
+                where you'll find a blend of elegance and modernity, ensuring your stay is nothing short of
+                extraordinary. </p>
+            <br>
+            <ul>
+                <li class="list">76-80 sqm on average </li>
+                <li class="list">Up to 4 persons<a class="btn" href="viewdetails(esplande).html" target="blank">VIEW
+                        DETAILS</a> </li>
+                <li class="list">1 King or 2 Queen beds</li>
+            </ul>
+
+
+        </div>
+        <div></div>
+
+        <div class="border">
+            <h2 class="room">Presidential Suite</h2>
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv.jpg" alt="room"
+                    class="image">
+                <div class="overlay">
+                    <div class="text">Access to our exclusive club lounge, providing complimentary refreshments and
+                        evening cocktails</div>
+                </div>
+            </div>
+
+
+            <p class="suite">From the exquisite furnishings to the impeccable attention to detail, every aspect of this
+                suite has
+                been thoughtfully crafted to provide you with an unforgettable experience. </p>
+            <br>
+            <ul>
+                <li class="list">95-100 sqm on average</li>
+                <li class="list">Up to 5 persons <a class="btn" href="viewdetails(presidentials).html"
+                        target="blank">VIEW DETAILS</a></li>
+                <li class="list">1 Living Room and 2 Bedroom</li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
+
+
+
+    <br><br>
+    <div class="grid-container">
+        <div></div>
+        <div class="border">
+            <h2 class="room">Chanens Signature Suite</h2>
+
+
+
+
+            <!-- The div container -->
+            <div class="image-container">
+                <!-- The image inside the div container -->
+                <img src="../Img/istockphoto-1066999762-612x612.jpg" alt="room" class="image">
+                <div class="overlay">
+                    <div class="text">Private balcony or terrace with breathtaking views, providing a tranquil oasis in
+                        the heart of the city</div>
+                </div>
+            </div>
+
+
+            <p class="suite"> Allow yourself to be enveloped in the warmth and exclusivity of this grand luxurious
+                retreat, creating memories that will last a lifetime.</p>
+            <br>
+            <ul>
+                <li class="list">120 sqm on average</li>
+                <li class="list">Up to 5 persons <a class="btn" href="viewdetails(chanenssss).html" target="blank">VIEW
+                        DETAILS</a></li>
+                <li class="list">1 Living Room and 2 Bedroom </li>
+            </ul>
+        </div>
+    </div>
+    <br><br>
+    <div onclick="scrollToTop()" id="backToTopArrow">↑ BACK TO TOP ↑</div>
+
+
+
+    <div class="grid-container51">
+        <div></div>
+        <div><a class="skid" onclick="scrollToTop()" id="backToTopArrow">↑ BACK TO TOP ↑</a></div>
+        <div></div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:70%">
+            <hr>
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:35%">
+
+            <p class="contact">CONTACT US</p>
+            <br>
+            <p class="contact2">+65 6666 9999</p>
+            <br>
+            <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+            <br>
+            <p class="contact2">tchinfo@chanenshotel.com</p>
+
+        </div>
+
+
+
+        <div class="w3-col w3-container" style="width:35%">
+            <p class="contact">GET IN TOUCH</p>
+            <br>
+            <p class="contact2">Sign up now to receive special offers and promotions</p>
+
+            <br>
+            <form action="../contact us.html" method="post">
+                <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                    onclick="sudmit()" class="submit-button">
+            </form>
+            <h2></h2>
+
+
+
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:18.5%"></div>
+        <div class="w3-col w3-container" style="width:17%"><a href="../JunSong_code/AboutUsStaff.html"
+                class="hyperlink5">Our Staff</a></div>
+        <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html"
+                class="hyperlink5">Contact Us</a></div>
+        <div class="w3-col w3-container" style="width:18%"><a href="../awards.html"
+                class="hyperlink5">Awards</a></div>
+        <div class="w3-col w3-container" style="width:35%"></div>
+
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:27.5%"></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+
+
+
+
+
+        <div class="w3-col w3-container" style="width:25%"></div>
+
+    </div>
+    <br><br>
+    <footer>
+        &copy; 2023 Chanens Hotel. All rights reserved.
+    </footer>
+
+    <script type="text/javascript">
+        const bg = document.getElementById('main')
+        window.addEventListener('scroll', function () {
+            bg.style.backgroundSize = 140 - +window.pageYOffset / 12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+
+        // Show/hide the "Back to Top" arrow based on the scroll position
+        window.addEventListener("scroll", function () {
+            var backToTopArrow = document.getElementById("backToTopArrow");
+
+            if (window.pageYOffset > 4000) {
+                backToTopArrow.style.display = "block";
+            } else {
+                backToTopArrow.style.display = "none";
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

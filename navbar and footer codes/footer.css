@@ -1,0 +1,54 @@
+.submit-button {
+    background-color: black;
+    /* Set the background color */
+    color: white;
+    /* Set the text color */
+    padding: 10px 20px;
+    /* Add padding */
+    border: none;
+    /* Remove the default border */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    border-radius: 4px;
+    /* Add border radius */
+
+}
+
+.instag {
+
+    width: 60px;
+}
+
+.hyperlink5 {
+    text-decoration: none;
+
+    float: left;
+    font-size: 22px;
+
+    float: right;
+}
+
+.hyperlink5:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.hyperlink5:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.hyperlink5:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }

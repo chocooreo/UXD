@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>View Details</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+	<link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body> 
+    <section>
+    <nav class="navbar">
+        <div class="content">
+            <img src="../Img/chanenslogo.PNG" class="logo">
+            <ul class="menulist">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</section>
+<script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menulist");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide")
+    }
+
+    // Function to scroll back to the top of the page
+    function scrollToTop() {
+        // Scroll to the top of the page smoothly
+        window.scrollTo({
+            top: 1,
+            behavior: "smooth"
+        });
+    }
+    function rach(){
+        var rach = "$1500"
+        localStorage.setItem("amount",rach)
+        window.location.href ="RachBook.html"
+    }
+</script>
+    <br><br><br><br>
+    <section class="section section-light"><br>
+        <h2 class="room">Chanens Signature Suite</h2><br><br><br>
+        <p class="room2">
+            The Signature Suite features thoughtfully designed interiors, adorned with contemporary furnishings and stylish decor, <br>
+            creating a space that exudes both comfort and refinement. Delight in the convenience of in-suite dining, with our <br> 
+            culinary team crafting a delightful menu to cater to your palate, bringing a gourmet dining experience to you.
+        </p>
+        <br>
+    </section>
+
+    <div class="pimg2" style="background-image: url(../Img/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg);">
+        <div class="ptext">
+        </div>
+    </div>
+
+    <section class="section2">
+        <p>-- Room Description --</p>
+    </section>
+
+
+
+    <div class="grid">
+
+
+        <div></div>
+        <div>
+            <div class="image-slideshow">
+                <div class="image fade">
+                    <img src="../Img/signature2.png" alt="Chanens Signature Suite Image" class="class">
+                </div>
+                <div class="image fade">
+                    <img src="../Img/5-star-hotel-project-sara-ho-design-llc-img~a79172fa09234dda_14-6073-1-deba2d1.jpg" alt="Chanens Signature Suite Image" class="class">
+                </div>
+                <div class="image fade">
+                    <img src="../Img/SIN_1025_original.jpg" alt="Chanens Signature Suite Image" class="class">
+                </div>
+            </div>
+        </div>
+        <div class="nothing"></div>
+        <div class="following">
+            <h3>Chanens Signature Suite</h3>
+            <p>
+                As a guest of the Signature Suite, you'll enjoy exclusive access to personalized services, 
+                ensuring your every need is met with attentive care and discretion. The Signature Suite offers 
+                a wealth of in-room entertainment options that make it perfect for enjoying quality time with friends and family. 
+            </p>
+
+            <h6>120sqm | 5 persons | 1 Living Room / 2 Bedroom | Bay view | Exclusive access to VIP services</h6>
+        </div>
+        <div></div>
+    </div>
+
+
+
+    <br><br><br>
+    <p class="name">Amenities Included In Your Stay</p>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:25%"></div>
+        <div class="w3-col w3-container" style="width:29%">                      
+
+            <ul class="ulist">
+                <li>VIP Check-In</li>
+                <li>Private balcony</li>
+                <li>98 Samsung television</li>
+                <li>24/7 Personal Concierge</li>
+                <li>Gourmet In-Suite Dining</li>
+            </ul>
+        </div>
+
+        <div class="w3-col w3-container" style="width:35%">
+
+            <ul class="ulist">
+                <li>Grand En-Suite Bathroom</li>
+                <li>6-seater dining table</li>
+                <li>Separate bathroom vanities</li>
+                <li>In-Suite Entertainment</li>
+                <li>Integrated smart in-room technology</li>
+            </ul>
+    </div>
+
+
+
+        </div>
+     
+
+
+        </div>
+    </div>
+
+    <br><br>
+    <h3 class="name">Rules & Regulations</h3><br>
+
+    <div class="grid2">
+        <div class="noborder"></div>
+        <div>
+            🚭<br>
+            <p class="regulation">Smoking shall not be permitted, and no person shall smoke in any indoor work area in
+                this Hotel.</p>
+        </div>
+        <div class="noborder"></div>
+        <div>
+            🔞<br>
+            <p class="regulation">Gambling, prostitution, weapons, flammable objects and drugs are strictly prohibited
+                on hotel premises.</p>
+        </div>
+        <div class="noborder"></div>
+        <div>
+            ⚠️<br>
+            <p class="regulation">The Management will not in any way be responsible for any loss / or damage to the
+                Guest's belongings.</p>
+        </div>
+        <div class="noborder"></div>
+
+    </div>
+
+    <div class="book-container">
+        <a class="back-to-top-btn" href="rachbook.html" target="_blank">BOOK NOW</a>
+    </div>
+    <br><br>
+
+    <div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:70%">
+			<hr>
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:35%">
+  
+			<p class="contact">CONTACT US</p>
+			<br>
+			<p class="contact2">+65 6666 9999</p>
+			<br>
+			<p class="contact2">1 Oxley Rise, Singapore 238714</p>
+			<br>
+			<p class="contact2">tchinfo@chanenshotel.com</p>
+  
+		</div>
+  
+  
+  
+		<div class="w3-col w3-container" style="width:35%">
+			<p class="contact">GET IN TOUCH</p>
+			<br>
+			<p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+			<br>
+			<form action="../contact us.html" method="post">
+				<input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+					onclick="sudmit()" class="submit-button">
+			</form>
+			<h2></h2>
+  
+  
+  
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+	  <div class="w3-col w3-container" style="width:18.5%"></div>
+	  <div class="w3-col w3-container" style="width:17%"><a href="../JunSong_code/AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+	  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+	  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+	  <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:27.5%"></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+		<div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+	</div>
+    <br><br>
+    <footer>
+		&copy; 2023 Chanens Hotel. All rights reserved.
+		  </footer>
+
+    <script>
+        let index = 0;
+        displayImages();
+        function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            index++;
+            if (index > images.length) {
+                index = 1;
+            }
+            images[index - 1].style.display = "block";
+            setTimeout(displayImages, 2000);
+        }
+
+        // Get a reference to the back-to-top button element
+        const backToTopBtn = document.querySelector('.back-to-top-btn');
+
+        // Function to check the scroll position and toggle the button visibility
+        function toggleBackToTopButton() {
+            if (window.scrollY > 1000) {
+                backToTopBtn.style.display = 'block'; // Show the button
+            } else {
+                backToTopBtn.style.display = 'none'; // Hide the button
+            }
+        }
+
+        // Add a scroll event listener to the window
+        window.addEventListener('scroll', toggleBackToTopButton);
+
+    </script>
+</body>
+</html>

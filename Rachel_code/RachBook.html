@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hotel Booking</title>
+
+  <link rel="stylesheet" href="stylerach1.css">
+  <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+  <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+
+  <link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script>
+    function sum() {
+      alert("Thank You!")
+      window.location.href = "successfulbooking.html"
+    }
+  </script>
+</head>
+
+<body>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="../mp4/video (2160p).mp4" type="video/mp4">
+    </video>
+  </div>
+  <section>
+    <nav class="navbar">
+      <div class="content">
+        <img src="../Img/chanenslogo.PNG" class="logo">
+        <ul class="menulist">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li style="color: white;"><a href="../index.html">HOME</a></li>
+          <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+          <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+          <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+              AND EVENTS</a></li>
+          <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+          <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menulist");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = () => {
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide")
+    }
+  </script>
+
+  <br><br><br><br><br><br>
+  <div class="w3-container">
+    <div class="w3-row">
+      <div class="w3-col w3-container" style="width:100%">
+        <div class="container ">
+          <form id="bookingForm" action="PayRAc.html">
+            <div class="w3-row"><br>
+              <div class="w3-col w3-container" style="width:22%"></div>
+              <div class="w3-col w3-container" style="width:55%">
+                <p class="Welcome"><b>The Chanens Hotel</b></p>
+              </div>
+              <div class="w3-col w3-container" style="width:25%"></div>
+            </div>
+
+            <br>
+
+
+
+
+
+
+            <div class="w3-row">
+              <div class="w3-col w3-container" style="width:4%"></div>
+              <div class="w3-col w3-container " style="width:30%">First Name:<br>
+                <input class="w3-input" type="text" id="name" name="name" required>
+              </div>
+
+              <div class="w3-col w3-container " style="width:30%">Last Name:<br>
+                <input class="w3-input" type="text" id="name" name="name" required>
+              </div>
+
+              <div class="w3-col w3-container " style="width: 30%">Email:<br>
+                <input class="w3-input" type="email" id="email" name="email" required>
+              </div>
+            </div>
+
+
+            <br>
+
+            <div class="w3-row">
+              <div class="w3-col w3-container" style="width:4%"></div>
+              <div class="w3-col w3-container " style="width:30%">Type of Hotel Room:<br>
+                <input class="w3-input" type="text" required>
+              </div>
+
+              <div class="w3-col w3-container " style="width:30%">Check-in Date&nbsp;&nbsp;
+                <i class="fa fa-calendar" style="font-size:20px"></i><br>
+                <input class="w3-input " type="date" id="dates" required>
+              </div>
+
+
+              <div class="w3-col w3-container " style="width:30%">Check-in Date&nbsp;&nbsp;
+                <i class="fa fa-calendar" style="font-size:20px"></i><br>
+                <input class="w3-input " type="date" id="datess" required>
+              </div>
+
+            </div>
+
+            <br>
+
+            <div class="w3-row">
+              <div class="w3-col w3-container" style="width:4%"></div>
+              <div class="w3-col w3-container " style="width:30%" for="guests">Contact Number:<br>
+                <input class="w3-input" type="text" id="contact" name="contact" maxlength="8" required>
+              </div>
+
+              <div class="w3-col w3-container " style="width:30%">Number Of Guests:<br>
+                <input class="w3-input" type="number" id="guests" name="guests" min="1" required>
+              </div>
+
+
+              <div class="w3-col w3-container " style="width:30%">Country/Territory:<br>
+                <input class="w3-input" type="text" required>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+              <div class="w3-row">
+                <div class="w3-col w3-container" style="width:4%"></div>
+                <div class="w3-col w3-container " style="width:30%">Promo code:<br>
+                  <input class="w3-input" type="text" id="name" name="name">
+                </div>
+
+                <div class="w3-col w3-container " style="width:30%">Any Special Request:<br>
+                  <input class="w3-input" type="text">
+                </div>
+
+                <div class="w3-col w3-container " style="width: 30%">Arrival Time preference:&nbsp;&nbsp;
+                  <i class="fa fa-clock" style="font-size:20px"></i><br>
+                  <input class="w3-input" type="time" id="time" name="time" required>
+                </div>
+              </div>
+
+
+              <br>
+
+              <div class="w3-row">
+                <div class="w3-col w3-container" style="width:4%"></div>
+                <div class="w3-col w3-container" style="width:65%">
+                  <label><input type="checkbox" required>&nbsp;&nbsp;&nbsp;&nbsp; I agree to the <a
+                      href="tac.html"><i><b><u>Terms and
+                            Conditions.</u></b></i></a></label>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="submit" class="submit-button">
+              </div>
+
+          </form>
+        </div>
+
+      </div>
+      <br>
+
+    </div>
+  </div>
+</body>
+<script>
+
+
+
+  window.addEventListener('DOMContentLoaded', function () {
+    // Get the input element for number of guests
+    const guestsInput = document.getElementById('guests');
+
+    // Add event listener to validate the input
+    guestsInput.addEventListener('input', function () {
+      // Get the entered value
+      let guests = parseInt(guestsInput.value);
+
+      // Check if the value is negative or NaN (not a number)
+      if (guests <= 0 || isNaN(guests)) {
+        // Set the value to 1 if it's negative or NaN
+        guestsInput.value = 1;
+      }
+    });
+  });
+
+
+
+</script>
+<script>
+  // Get the date input element
+  const dateInput = document.getElementById('dates');
+
+  // Get the current date in the local time zone
+  const currentDate = new Date().toLocaleDateString('en-CA'); // Replace 'en-CA' with your desired locale
+
+  // Set the minimum attribute of the date input to the current date
+  dateInput.setAttribute('min', currentDate);
+</script>
+
+
+
+<script>
+  // Get the date input element
+  const dateInputs = document.getElementById('datess');
+
+  // Get the current date in the local time zone
+  const currentDates = new Date().toLocaleDateString('en-CA'); // Replace 'en-CA' with your desired locale
+
+  // Set the minimum attribute of the date input to the current date
+  dateInputs.setAttribute('min', currentDates);
+</script>
+
+
+
+<script>
+  // Retrieve form data from session storage and populate the form fields
+  document.addEventListener('DOMContentLoaded', function () {
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach((input) => {
+      const storedValue = sessionStorage.getItem(input.name);
+      if (storedValue) {
+        input.value = storedValue;
+      }
+    });
+  });
+
+
+
+
+</script>
+
+</html>

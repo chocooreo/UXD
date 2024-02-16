@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Home</title>
+	<link rel="stylesheet" href="ignatius_codes/iggy.css">
+    <link rel="stylesheet" href="navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="navbar and footer codes/footer.css">
+	<link rel="stylesheet" href="navbar and footer codes/styleone.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="ignatius_codes/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+                    <li style="color: white;"><a href="index.html">HOME</a></li>
+                        <li style="color: white;"><a href="Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+    height: 650px;
+    object-fit: cover;" id="main">
+		<source src="ignatius_codes/iggy.mp4" type="video/mp4">
+	  </video>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+		const bg = document.getElementById('main')
+		window.addEventListener('scroll', function () {
+			bg.style.backgroundSize = 140 - +window.pageYOffset / 12 + '%';
+			bg.style.opacity = 1 - +window.pageYOffset / 700 + '';
+		})
+	</script>
+	
+	<!-- Wrap the content in a w3-container to make it responsive -->
+	<div class="w3-container">
+		<h1 class="Dinningword">-WELCOME TO THE CHANENS HOTEL SINGAPORE-</h1>
+		<div class="hotel-info">
+				<p class="para1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	
+	<!-- Add w3-responsive class to make the images responsive -->
+	<div class="w3-responsive">
+		<h4 class="headers">Featured Rooms and Suites</h4>
+
+		<script>
+			function show() {
+				/* Access image by id and change
+				the display property to block*/
+				document.getElementById('image')
+					.style.display = "block";
+			}
+		</script>
+
+		<div class="roomsandsuites">
+			<div class="room">
+				<img class="roomimg w3-image" src="ignatius_codes/suite.jpg">
+				<h3 class="rhead">Chanens Signature Suite</h3><br>
+				<p class="rtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="room">
+				<img class="roomimg w3-image" src="ignatius_codes/ppalace.jpg">
+				<h3 class="rhead">The Presidential Suite</h3><br>
+				<p class="rtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="room">
+				<img class="roomimg w3-image" src="ignatius_codes/room.jpg">
+				<h3 class="rhead">The Esplanade Suite</h3><br>
+				<p class="rtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="rb">
+		<button class="roombtn"><a href="Rachel_code/RachelPages.html">VIEW ROOMS AND SUITES	</a></button>
+	
+	</div>
+
+	<h4 class="headers">Facilities and Dining</h4>
+
+
+	<div class="container">
+		<div class="slide-container active">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">LUXURY DINING</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="JunSong_code/MainPageDinning.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/cafes.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">MEETINGS AND EVENTS</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Brendon_EventsPage/Meeting and Amenities.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/ballroom.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">KIDS PLAYROOM</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Ashley_code/amentitesAsh.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/kids.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">GYM</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Ashley_code/amentitesAsh.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/gym.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">GAMES ROOM</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Ashley_code/amentitesAsh.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/games.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">POOL AND JACUZZI</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Ashley_code/amentitesAsh.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/pool.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="slide-container">
+			<div class="slide">
+				<div class="content">
+					<h3 class="heady">THE CHANENS SPA</h3><br>
+					<p class="par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="Ashley_code/amentitesAsh.html" class="btn">LEARN MORE</a>
+				</div>
+				<div class="image">
+					<img src="ignatius_codes/spa.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div id="prev" onclick="prev()">
+			< </div>
+				<div id="next" onclick="next()"> > </div>
+
+		</div>
+
+		<div id="prev" onclick="prev()">
+			< </div>
+				<div id="next" onclick="next()"> > </div>
+
+		</div>
+
+		<script>
+
+			let slides = document.querySelectorAll('.slide-container');
+			let index = 0;
+
+			//next function
+			function next() {
+				slides[index].classList.remove('active');
+				index = (index + 1) % slides.length;
+				slides[index].classList.add('active');
+			}
+
+			//prev function
+			function prev() {
+				slides[index].classList.remove('active');
+				index = (index - 1 + slides.length) % slides.length;
+				slides[index].classList.add('active');
+			}
+
+		</script>
+	</div>
+
+	<h4 class="headers">Our Location</h4>
+	<div class="map"><iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5989.730424717225!2d103.83813474062687!3d1.299709618809434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199777aa054f%3A0x380bf40e09beb9a5!2s1%20Oxley%20Rise%2C%20Singapore%20238714!5e0!3m2!1sen!2ssg!4v1684463095747!5m2!1sen!2ssg"
+			width="110%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+	<h4 class="headers">Guest Reviews</h4>
+	<div class="reviews">
+		<div class="revbox">
+			<img src="ignatius_codes/black sheep.jpg" width="100px" height="100px" alt=""><br>
+			<h4>"Fantastic atmosphere! The staff were really polite and the breakfast spread was to die for!"</h4>
+			<p class="user">-baba black sheep</p>
+		</div>
+		<div class="revbox">
+			<img src="ignatius_codes/messi.jpg" width="100px" height="100px" alt=""><br>
+			<h4>"Staying at The Chanens Hotel gave me the ability to win the Qatar World Cup!"</h4>
+			<p class="user">-Lionel Messi</p>
+		</div>
+		<div class="revbox">
+			<img src="ignatius_codes/leo.png" width="100px" height="100px"><br>
+			<h4>"The Chanens Hotel was a great place to relax and enjoy after a long day of filming!"</h4>
+			<p class="user">-Leonardo DiCaprio</p>
+		</div>
+	</div>
+
+
+
+	<h4 class="headers">#tchsingapore</h4>
+	<div class="igposts">
+		<div class="igp">
+		  <div class="image">
+			<a href="https://www.instagram.com/thechanenshotel/" target="_blank">
+			  <img src="ignatius_codes/view.jpg" height="200px" width="200px" alt="Instagram Post 1">
+			</a>
+		  </div>
+		  <div class="image">
+			<a href="https://www.instagram.com/thechanenshotel/" target="_blank">
+			  <img src="ignatius_codes/palace.jpg" height="200px" width="200px" alt="Instagram Post 2">
+			</a>
+		  </div>
+		  <div class="image">
+			<a href="https://www.instagram.com/thechanenshotel/" target="_blank">
+			  <img src="ignatius_codes/ig.jpg" height="200px" width="200px" alt="Instagram Post 3">
+			</a>
+		  </div>
+		  <div class="image">
+			<a href="https://www.instagram.com/thechanenshotel/" target="_blank">
+			  <img src="ignatius_codes/man.jpg" height="200px" width="200px" alt="Instagram Post 4">
+			</a>
+		  </div>
+		  <div class="image">
+			<a href="https://www.instagram.com/thechanenshotel/" target="_blank">
+			  <img src="ignatius_codes/hallway.png" height="200px" width="200px" alt="Instagram Post 5">
+			</a>
+		  </div>
+		</div>
+	  </div>
+	  <div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:70%">
+			<hr>
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:35%">
+  
+			<p class="contact">CONTACT US</p>
+			<br>
+			<p class="contact2">+65 6666 9999</p>
+			<br>
+			<p class="contact2">1 Oxley Rise, Singapore 238714</p>
+			<br>
+			<p class="contact2">tchinfo@chanenshotel.com</p>
+  
+		</div>
+  
+  
+  
+		<div class="w3-col w3-container" style="width:35%">
+			<p class="contact">GET IN TOUCH</p>
+			<br>
+			<p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+			<br>
+			<form action="ignatius_codes/contact us.html" method="post">
+				<input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+					onclick="sudmit()" class="submit-button">
+			</form>
+			<h2></h2>
+  
+  
+  
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+	  <div class="w3-col w3-container" style="width:18.5%"></div>
+	  <div class="w3-col w3-container" style="width:17%"><a href="junSong_code/AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+	  <div class="w3-col w3-container" style="width:20%"><a href="ignatius_codes/contact us.html" class="hyperlink5">Contact Us</a></div>
+	  <div class="w3-col w3-container" style="width:18%"><a href="ignatius_codes/awards.html" class="hyperlink5">Awards</a></div>
+	  <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:27.5%"></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+		<div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+	</div>
+
+	<script>
+
+		function sudmit() {
+
+			const email = document.getElementById('email').value
+			localStorage.setItem("EMAIL", email);
+			return
+		}
+	</script><br><br>
+	<footer>
+		<p>&copy; 2023 Chanens Hotel. All rights reserved.</p>
+	</footer>
+</body>
+</html>

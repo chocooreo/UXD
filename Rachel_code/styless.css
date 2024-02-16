@@ -1,0 +1,416 @@
+@font-face {
+  font-family: adam;
+  src: url(Adam-Medium.ttf)
+}
+
+@font-face {
+  font-family: vogue;
+  src: url(SandeMoreDemo-Bold.otf)
+}
+
+
+
+#main {
+  position: relative;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 150%;
+}
+
+.mainimg {
+  position: absolute;
+  top: 90px;
+  left: 0%;
+  width: 100%;
+  pointer-events: none;
+}
+
+
+
+.heading {
+  font-family: adam;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+.pimg2 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../Img/6f7235447ca2c37edf7df110269d363b.jpg");
+  min-height: 400px;
+}
+
+.room {
+  padding-top: 30px;
+  font-family: adam;
+  font-size: 40px;
+  text-shadow: #717171;
+  text-align: center;
+  height: 10px;
+}
+
+.room2 {
+  text-align: center;
+  text-decoration: none;
+  font-family: adam;
+  font-size: 20px;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: adam;
+  margin: 0
+}
+
+.mySlides {
+  display: none
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 500px;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  float: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+.btn {
+  font-family:adam;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 0.8em;
+  float: left;
+  background-color: rgba(240, 240, 240, 10);
+  color: rgb(154, 152, 152);
+  border-radius: 2px;
+  border: 1px solid whitesmoke;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #808080;
+}
+
+.btn:hover {
+  color: black;
+  transform: translateY(-5px);
+}
+
+.float {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: whitesmoke;
+  margin: 20px;
+}
+
+.grid {
+
+  display: grid;
+  grid-template-columns: auto 500px 50px 500px auto;
+  gap: 10px;
+  padding: 10px;
+  
+}
+
+.grid>div {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+
+* {
+  box-sizing: border-box
+}
+
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-right:60px;
+  padding-left:20px;
+
+}
+
+.class {
+  width: 130%
+}
+
+.following p{
+  text-align: center;
+  font-size: 20px;
+  font-family:adam;
+}
+
+
+.following h3{
+  padding-bottom: -10px;
+  font-size: 30px;
+  font-family: adam;
+  font-weight: bold;
+
+}
+
+.section2{
+  text-align: center;
+  font-size: 30px;
+  font-family: adam;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.following {
+  font-family: adam;
+  font-size: 20px;
+  font-weight: 500;
+  height: 375px;
+  padding: 0.5em 0.8em;
+  float: right;
+  border-left: 1px solid brown;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .5
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+.grid2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto 300px 20px 300px 20px 300px auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid2>div {
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  border: 1px solid brown;
+}
+
+
+.grid2 .noborder{
+  border: 2px solid white
+}
+
+.gridc .noborder{
+  border: 2px solid white
+}
+
+
+.noborderone{
+  text-align: center;
+  padding : 10px 10px;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: adam;
+  width: 30%;
+}
+
+.noborderone:hover {
+  background-color :white;
+  color: black;
+  border: 1px solid gold;
+}
+
+
+.regulation{
+  font-size: 20px;
+  font-family:adam;
+  font-weight: bold;
+}
+
+
+
+.name{
+  font-family: adam;
+  font-size: 25px;
+  text-align: center;
+}
+
+.naming{
+  text-align: center;
+  font-size: 20px;
+  font-family:adam;
+  text-shadow: #717171;
+}
+
+.gridc{
+  display: grid;
+  grid-template-columns: 279px 400px 50px 400px 279px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.gridc h3{
+  text-align: center;
+  font-size: 20px;
+  font-family:adam;
+}
+
+.gridc>div {
+  justify-items: center;
+
+padding: 40px;
+  margin-top: 10px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+
+.ulist{
+  color: #2b2a2a;
+  font-size: 20px;
+  font-family: adam;
+  width: 500px;
+  font-weight: bold;
+  text-align: justify;
+  font-display:initial;
+}
+
+.book-container {
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-to-top-btn {
+  padding: 10px 20px;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: adam;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.back-to-top-btn:hover {
+  background-color :white;
+  color: black;
+  border: 1px solid gold;
+}

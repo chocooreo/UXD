@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+  <title>Successful Booking Page</title>
+  <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+  <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+  <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+  <link rel="stylesheet" href="stylethis.css">
+  <link rel="stylesheet" href="../Ashley_code/amenities.css">
+  <link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <section>
+    <nav class="navbar">
+      <div class="content">
+        <img src="../Img/chanenslogo.PNG" class="logo">
+        <ul class="menulist">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menulist");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = () => {
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide")
+    }
+  </script>
+  <br><br><br>  <br><br>
+  
+  <div class="containerTermsAndConditions" style="margin: 50px;">
+  <h2><b>Terms and Conditions of booking Chanens Hotel</b></h2>
+  <p>Please read the following terms and conditions carefully before booking a hotel room and amenities. By making a reservation, you agree to abide by these terms and conditions:</p>
+  
+  <h3>1. Reservation and Booking:</h3>
+  <ul>
+    <li>All reservations are subject to availability and acceptance by the hotel.</li>
+    <li>The minimum age to book a hotel room is 18 years old.</li>
+    <li>A valid credit card is required to make a reservation. Payment will be processed upon check-in, unless specified otherwise.</li>
+  </ul>
+  <br>
+
+  <h3>2. Check-In and Check-Out:</h3>
+  <ul>
+    <li>Check-in time is 3:00 PM, and check-out time is 12:00 PM.</li>
+    <li>Early check-in or late check-out may be available upon request, subject to availability, and may incur additional charges.</li>
+  </ul>
+  <br>
+
+  <h3>3. Payment and Charges:</h3>
+  <ul>
+    <li>The rates quoted are inclusive of applicable taxes unless otherwise stated.</li>
+    <li>Any additional charges for amenities, services, or damages incurred during the stay will be the responsibility of the guest and must be settled upon check-out.</li>
+    <li>The hotel reserves the right to pre-authorize or charge the provided credit card for incidental expenses.</li>
+  </ul>
+  <br>
+
+  <h3>4. Cancellation and No-Show:
+</h3>
+  <ul>
+    <li>Cancellation policies vary based on the type of reservation and time of booking. Please refer to the specific cancellation policy provided at the time of booking.</li>
+    <li>In the event of a no-show (failure to check-in on the scheduled arrival date without prior notice), the guest will be charged for the full reservation amount.</li>
+  </ul>
+  <br>
+
+  <h3>5. Amendments and Modifications:</h3>
+  <ul>
+    <li>Changes to the reservation, including dates, room type, or amenities, are subject to availability and may incur additional charges.</li>
+    <li>Amendments must be made within the hotel's specified time frame.</li>
+  </ul>
+  <br>
+
+  <h3>6. Guest Responsibilities:</h3>
+  <ul>
+    <li>The primary guest must present a valid government-issued photo identification upon check-in.</li>
+    <li>Guests are responsible for any damage caused to the hotel property, fixtures, or amenities during their stay.</li>
+  </ul>
+  <br>
+
+  <h3>7. Hotel's Rights:</h3>
+  <ul>
+    <li>The hotel reserves the right to refuse service or entry to anyone behaving inappropriately or violating hotel policies.</li>
+    <li>The hotel may request guests to provide a security deposit upon check-in to cover incidentals.
+    </li>
+  </ul>
+  <br>
+
+  <h3>8. Age Restrictions:</h3>
+  <ul>
+    <li>Guests under the age of 18 must be accompanied by an adult to check-in.</li>
+  </ul>
+  <br>
+
+  <h3>9. Smoking and Pets:</h3>
+  <ul>
+    <li>Smoking is strictly prohibited in all indoor areas of the hotel. Designated smoking areas may be available.</li>
+    <li>Unless otherwise stated, pets are not allowed on the hotel premises.</li>
+  </ul>
+  <br>
+
+  <h3>10. Liability:</h3>
+  <ul>
+    <li>The hotel shall not be liable for any loss, damage, or theft of personal belongings or valuables during the stay.</li>
+    <li>The hotel shall not be liable for any injury or accident occurring on the hotel premises.</li>
+  </ul>
+  <br>
+
+  <h3>11. Privacy and Data Protection:</h3>
+  <ul>
+    <li>The hotel respects your privacy and will handle your personal information in accordance with its Privacy Policy.</li>
+  </ul>
+  <br>
+
+  <h3>12. Force Majeure:</h3>
+  <ul>
+    <li>The hotel shall not be held responsible for any failure or delay in providing services due to events beyond its control, including but not limited to natural disasters, acts of terrorism, or civil disturbances.</li>
+  </ul>
+  <br>
+
+  <h3>13. Governing Law and Jurisdiction:</h3>
+  <ul>
+    <li>These terms and conditions shall be governed by and construed in accordance with the laws of [Jurisdiction], and any disputes shall be subject to the exclusive jurisdiction of the courts in [Jurisdiction].</li>
+  </ul>
+  <br>
+
+  <p>By booking a hotel room and amenities, you acknowledge that you have read, understood, and agreed to these terms and conditions. If you have any questions or concerns, please contact the hotel directly before making your reservation.</p>
+  <br><br>
+  <a class="btn" style="display:flex; justify-content: center;" onclick="submits()" href="rachbook.html">BACK TO CHANENS BOOKING PAGE</a>
+</div>
+
+
+
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:15%"></div>
+  <div class="w3-col w3-container" style="width:70%">
+    <hr>
+  </div>
+  <div class="w3-col w3-container" style="width:15%"></div>
+</div>
+<br>
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:15%"></div>
+  <div class="w3-col w3-container" style="width:35%">
+
+    <p class="contact">CONTACT US</p>
+    <br>
+    <p class="contact2">+65 6666 9999</p>
+    <br>
+    <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+    <br>
+    <p class="contact2">tchinfo@chanenshotel.com</p>
+
+  </div>
+
+
+
+  <div class="w3-col w3-container" style="width:35%">
+    <p class="contact">GET IN TOUCH</p>
+    <br>
+    <p class="contact2">Sign up now to receive special offers and promotions</p>
+
+    <br>
+    <form action="../contact us.html" method="post">
+      <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+        onclick="sudmit()" class="submit-button">
+    </form>
+    <h2></h2>
+
+
+
+  </div>
+  <div class="w3-col w3-container" style="width:15%"></div>
+</div>
+<br>
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:18.5%"></div>
+  <div class="w3-col w3-container" style="width:17%"><a href="../JunSong_code/AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+  <div class="w3-col w3-container" style="width:35%"></div>
+
+</div>
+<br>
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:27.5%"></div>
+  <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+        src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+  <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+        src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+  <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+        src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+  <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+        src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+  <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+        src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+
+
+
+
+
+  <div class="w3-col w3-container" style="width:25%"></div>
+
+</div>
+    <br><br>
+    <footer>
+      &copy; 2023 Chanens Hotel. All rights reserved.
+        </footer>
+    <script>
+
+      function submit() {
+
+        const email = document.getElementById('email').value
+        localStorage.setItem("EMAIL", email);
+        return
+      }
+
+    </script>
+
+  </body>
+</html>
