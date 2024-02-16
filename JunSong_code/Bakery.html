@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Bakery</title>
+	<link rel="stylesheet" href="stylefive.css">
+
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script>		function myFunction() {
+		var x = document.getElementById("demo");
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else {
+			x.className = x.className.replace(" w3-show", "");
+		}
+	}
+
+
+
+
+	function addcart() {
+		var counter = parseInt(localStorage.getItem("counter")) || 0;
+		counter++;
+		alert("Cake Added !!");
+		localStorage.setItem("cakeName", "Symphony of Layers");
+		localStorage.setItem("selectedImage", "../Img/cake2.jpg");
+		window.location.href ="BakeryOuting.html"
+
+	}
+
+	function addcart2() {
+		var counter = parseInt(localStorage.getItem("counter")) || 0;
+		counter++;
+		alert("Cake Added !!");
+		localStorage.setItem("cakeName", "Grand Cascade Delight");
+		localStorage.setItem("selectedImage", "../Img/cake3.jpg");
+		window.location.href ="BakeryOuting.html"
+
+	}
+
+	function addcart3() {
+		var counter = parseInt(localStorage.getItem("counter")) || 0;
+		counter++;
+		alert("Cake Added !!");
+		localStorage.setItem("cakeName", "Multi-tiered Marve");
+		localStorage.setItem("selectedImage", "../Img/cake4.jpg");
+		window.location.href ="BakeryOuting.html"
+	}
+
+	function addcart4() {
+		var counter = parseInt(localStorage.getItem("counter")) || 0;
+		counter++;
+		alert("Cake Added !!");
+		localStorage.setItem("cakeName", "Layered Extravaganza");
+		localStorage.setItem("selectedImage", "../Img/cake5.jpg");
+		window.location.href ="BakeryOuting.html"
+
+	}
+</script>
+</head>
+
+<body>
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="../Img/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+					<li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+	
+	</script>
+
+	<video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+    height: 650px;
+    object-fit: cover;" id="main">
+		<source src="../Mp4/Bakery2.mp4" type="video/mp4">
+	  </video>
+	<div class="w3-container">
+		<div class="w3-row">
+		<div class="w3-col w3-container" style="width:100%"><p class="home"><a href="#" class="hyperlink">Home</a> ><a href="MainPageDinning.html" class="hyperlink">Dinning Page</a>><a>Chanes Bakery</a></div>
+		<div class="w3-col w3-container " style="width:100%"><h1 class="Dinningword">Restaurants and Bar</h1></div>
+		<div class="w3-col w3-container" style="width:100%"><h1 class="Welcome">-Chanes Bakery-</h1></div>
+		</div>
+		<div class="w3-row">
+			<div class="w3-col w3-container" style="width:23.5%"></div>
+			<div class="w3-col w3-container" style="width:55%"><h1 class="first">Within the charming streets of Tranquil Brews Hotel, a delightful treat awaits. Step into our renowned bakery, Chane's Bakery, and embark on a delicious journey that will tantalize your taste buds and satisfy your cravings.</h1></div>
+			<div class="w3-col w3-container" style="width:22.5%"></div>
+		</div>
+		
+		<div class="w3-row">
+			<div class="w3-col w3-container" style="width:25.5%"></div>
+			<div class="w3-col w3-container" style="width:50%"><h1 class="first">
+				Chane's Bakery, nestled in the heart of the hotel, enchants guests with its cozy atmosphere. Warm lighting, inviting aromas, and a delightful display of freshly baked goods create an irresistible ambiance. The sound of soft music sets the stage for a memorable bakery experience.</h1><br></div>
+			<div class="w3-col w3-container" style="width:23.5%"></div>
+		</div>
+		
+		<div class="w3-row">
+			<div class="w3-col w3-container" style="width:23%"></div>
+			<div class="w3-col w3-container" style="width:55%"><h1 class="first">Indulge in the exquisite creations of Chane's Bakery and discover why it has become a beloved destination for those seeking delectable pastries and bread. Join us, and let your taste buds embark on a sweet and savory journey they will never forget.</h1></div>
+			<div class="w3-col w3-container" style="width:23.5%"></div>
+		</div>
+		<br>
+		<div class="w3-row">
+			<div class="w3-col w3-container" style="width:25%"></div>
+			<div class="w3-col w3-container" style="width:50%"><h1 class="first">Only Able to order One Cake </h1></div>
+			<div class="w3-col w3-container" style="width:25%"></div>
+		<div class="w3-row">
+
+
+			<div class="w3-col w3-container" style="width:10%"></div>
+			<div class="w3-col w3-container" style="width:20%">
+			<img src="../Img/cake2.jpg" class="Hightea w3-image"  onclick="addcart(); "><hr class="Hello" >
+			<h1 class="first1">Symphony of Layers</h1>
+			</div>
+			<div class="w3-col w3-container" style="width:20%">
+				<img src="../Img/cake3.jpg" class="Hightea w3-image" onclick="addcart2();"><hr class="Hello"/>
+			<h1 class="first1">Grand Cascade Delight</h1>
+			</div>
+			<div class="w3-col w3-container" style="width:20%">
+				<img src="../Img/cake4.jpg" class="Hightea w3-image" onclick="addcart3();"><hr class="Hello"/>
+			<h1 class="first1">Multi-tiered Marvel</h1>
+			</div>
+			<div class="w3-col w3-container" style="width:20%">
+				<img src="../Img/cake5.jpg" class="Hightea w3-image" onclick="addcart4();"><hr class="Hello"/>
+			<h1 class="first1">Layered Extravaganza</h1>
+			</div>
+
+
+
+
+			<div class="w3-col w3-container" style="width:10%"></div>
+		</div>
+		<br>
+
+
+
+	<br>
+
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:70%">
+			<hr>
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:35%">
+  
+			<p class="contact">CONTACT US</p>
+			<br>
+			<p class="contact2">+65 6666 9999</p>
+			<br>
+			<p class="contact2">1 Oxley Rise, Singapore 238714</p>
+			<br>
+			<p class="contact2">tchinfo@chanenshotel.com</p>
+  
+		</div>
+  
+  
+  
+		<div class="w3-col w3-container" style="width:35%">
+			<p class="contact">GET IN TOUCH</p>
+			<br>
+			<p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+			<br>
+			<form action="../contact us.html" method="post">
+				<input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+					onclick="sudmit()" class="submit-button">
+			</form>
+			<h2></h2>
+  
+  
+  
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+	  <div class="w3-col w3-container" style="width:18.5%"></div>
+	  <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+	  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+	  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+	  <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:27.5%"></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+		<div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+	</div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+<br><br>
+<footer>
+	&copy; 2023 Chanens Hotel. All rights reserved.
+	  </footer>
+</body>
+
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function () {
+			const bg = document.getElementById('main');
+			bg.style.backgroundSize = '100%'; // Set a fixed background size
+			bg.style.opacity = 1 - window.pageYOffset / 700;
+		  });
+
+
+	</script>
+
+	  
+	  
+</body>
+
+</html>

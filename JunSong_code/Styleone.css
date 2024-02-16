@@ -1,0 +1,479 @@
+    
+  .video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .video1 {
+    width: 1700px;
+    height: 620px;
+    object-fit: cover;
+  }
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: adam;
+    src: url(Adam-Medium.ttf)
+}
+
+@font-face{
+    font-family: vogue;
+    src: url(SandeMoreDemo-Bold.otf)
+}
+
+
+.w3-bar-item{   
+    font-family: vogue;
+    margin-bottom: 2px;
+    margin-right: 22px;
+}
+.w3-top div a:hover {
+    color: yellow;
+  }
+  a{
+    text-decoration: none;
+}
+
+.butt{
+    background-color: white;
+    padding: 10px 10px;
+}
+
+.content {
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar.sticky {
+    padding: 30px 0;
+    background-color: black;
+}
+
+.navbar .menulist {
+    display: inline-flex;
+    align-items: center;
+    /* Add this line to align the button vertically */
+}
+
+@font-face {
+    font-family: adam;
+    src: url(Adam-Medium.ttf)
+}
+
+.menulist li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: adam;
+}
+
+.menulist li {
+    list-style: none;
+}
+
+.menulist li a:hover {
+    color: gold;
+}
+
+.icon {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.logo {
+    width: 8%;
+    height: 8%;
+}
+
+.book {
+    color: black;
+    border-color: white;
+    background-color: white;
+    font-family: adam;
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    margin-left: 25px;
+    /* Add margin to create space between the button and the previous list item */
+    font-size: 20px;
+}
+
+.book:hover {
+    color: gold;
+    border-color: white;
+    background-color: white;
+    font-family: adam;
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    margin-left: 25px;
+    /* Add margin to create space between the button and the previous list item */
+    font-size: 20px;
+}
+
+@media(max-width: 1100px) {
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbar .menulist {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menulist.active {
+        left: 0%;
+    }
+
+    .navbar .menulist li {
+        margin-top: 45px;
+    }
+
+    .navbar .menulist li a {
+        font-size: 23px;
+    }
+}
+
+  .hyperlink{
+    text-decoration: none;
+    color: black;
+    
+   }
+   .hyperlink:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .home
+  {
+   font-family: adam;
+ color: black    ;
+ padding-left: 50px;
+ font-size: 20px;
+ text-transform: uppercase;
+ 
+  }
+  .Dinningword
+  {
+ 
+    font-family: adam;
+    text-transform: uppercase;
+    text-align: center;
+  }
+.Welcome
+  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .Welcomezz
+  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+  }
+
+.first
+  {
+font-family: sans-serif;
+    font-size: 19px;
+    text-align: center;
+  }
+
+
+  .hyperlink1{
+    text-decoration: none;
+    color: grey;
+    
+   }
+   .hyperlink1:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink1:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink1:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .Hightea
+  {
+    
+
+    width: 500px;
+    height: 350px;
+  }
+  .firstpara{
+
+    font-size: 20px;
+  
+    font-family: adam;
+ text-align: left;
+  }
+.Right{
+  font-family: adam;
+}
+.Rights{
+  font-family: vouge;
+}
+  .hyperlink2{
+    text-decoration: none;
+
+    font-family: adam;
+font-size: 20px;
+    width: 100%;
+  text-align: left;
+   }
+   .hyperlink2:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink2:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink2:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  .hyperlink3{
+    text-decoration: none;
+cursor: pointer;
+    font-family: adam;
+font-size: 20px;
+
+  float: right;
+   }
+   .hyperlink3:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink3:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink3:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .rightzz{
+    font-family: adam;
+ font-size:30px;
+
+  }
+.Cove1{
+
+
+font-family: adam;
+ font-size:40px;
+}
+.contact{
+
+    font-size: 20px;
+}
+.contact2{
+
+    font-size: 18px;
+}
+.hyperlink4{
+    text-decoration: none;
+
+float: left;
+font-size: 18px;
+
+float: right;
+   }
+   .hyperlink4:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink4:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink4:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+    .submit-button {
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Add border radius */
+    width: 100%;
+  }
+  .submit-button1 {
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Add border radius */
+ 
+  }
+  .instag{
+
+    width: 50px;
+  }
+
+  .hyperlink5{
+    text-decoration: none;
+
+float: left;
+font-size: 22px;
+
+float: right;
+   }
+   .hyperlink5:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink5:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink5:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .img {
+    width: 100%
+  }
+  .scroll {
+          overflow: scroll;
+          height: 350px;
+  
+        }
+.faith{
+
+
+  font-size: 35px;
+}
+.Phone{
+
+
+  height: 50px;
+}
+
+.Number{
+  font-family: adam;
+  font-size: 25px;
+}
+        
+.book {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.book.hover {
+  background-color: gold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel |Imperial Kitchen</title>
+    <link rel="stylesheet" href="styleseven.css">
+    <link rel="stylesheet" href="stylesix.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../Ashley_code/amenities.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="../Img/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+        var luckyNo
+        function generateNumber(){
+          luckyNo=Math.floor(Math.random()*100000)+1
+        }
+      </script>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="successful"><img src="../Img/tick.jpg" style="border-radius:50%; width:55%;" /></div>
+      <br>
+      <h2 class="Hotelcal">Congratulations! Your room booking has been confirmed successfully. 
+        <br> We sincerely appreciate your reservation.</h2>
+      <br>
+      <script>generateNumber()</script>
+      <h4 class="Hotelcal">Booking code: <script>document.write(luckyNo)</script></h4>
+      <br>
+      <p class="Hotelcal">An email confirmation will be sent to your email.<br>Thank you for choosing the Chanens Hotel!</p>
+      <br>
+      </form>
+
+
+
+    
+
+
+    <div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:70%">
+			<hr>
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:35%">
+  
+			<p class="contact">CONTACT US</p>
+			<br>
+			<p class="contact2">+65 6666 9999</p>
+			<br>
+			<p class="contact2">1 Oxley Rise, Singapore 238714</p>
+			<br>
+			<p class="contact2">tchinfo@chanenshotel.com</p>
+  
+		</div>
+  
+  
+  
+		<div class="w3-col w3-container" style="width:35%">
+			<p class="contact">GET IN TOUCH</p>
+			<br>
+			<p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+			<br>
+			<form action="../contact us.html" method="post">
+				<input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+					onclick="sudmit()" class="submit-button">
+			</form>
+			<h2></h2>
+  
+  
+  
+		</div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>
+	<div class="w3-row">
+	  <div class="w3-col w3-container" style="width:18.5%"></div>
+	  <div class="w3-col w3-container" style="width:17%"><a href="../JunSong_code/AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+	  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+	  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+	  <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:27.5%"></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+		<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+					src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+		<div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+	</div>
+    <script>
+
+      function sudmit() {
+
+        const email = document.getElementById('email').value
+        localStorage.setItem("EMAIL", email);
+        return
+      }
+
+
+    </script>
+    <br>
+  </body>
+
+</html>
+
+</body>
+<script>
+window.addEventListener('scroll', function () {
+    const bg = document.getElementById('main');
+    bg.style.backgroundSize = '100%'; // Set a fixed background size
+    bg.style.opacity = 1 - window.pageYOffset / 700;
+  });
+</script>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Bakery</title>
+    <link rel="stylesheet" href="stylesix.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <script>        
+        function saveSelection() {
+        const select = document.getElementById('Select').value;
+        const message = document.getElementById('message').value;
+        const name = document.getElementById('Name').value;
+        if (!message || !name || !select) {
+           
+            alert("Please fill in all required fields before proceeding to payment.");
+
+            return;
+        }
+        localStorage.setItem("select", select);
+        localStorage.setItem("message", message);
+        localStorage.setItem("name", name);
+        window.location.href = 'LeaveBakery.html';
+      }
+    function removal() {
+        localStorage.removeItem("cakeSelect");
+        localStorage.removeItem("cakeNames");
+        localStorage.removeItem("cakeName");
+        localStorage.removeItem("selectedImage");
+        window.location.href = 'bakery.html';
+        window.location.href = 'Bakery.html';
+    }
+    
+    function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+    </script>
+</head>
+
+<body>
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="../Img/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+	
+	</script>
+
+  
+    <br>  <br>  <br>  <br><br><br><br>
+	
+ 
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:100%">
+                <p class="home"><a href="#" class="hyperlink">Home</a> ><a href="MainPageDinning.html" class="hyperlink">Dinning Page</a>><a href="Bakery.html " class="hyperlink">Chanes Bakery</a>><a id="cakeName"></a></p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:35%">
+                <img id="selectedImage" class="w3-image" height="500" width="500">
+
+            </div>
+            <div class="w3-col w3-container" style="width:35%">
+                <p id="cakeNames" class="first1"></p><br>
+                <p class="first2 ">$200</p>
+                <br>
+                <p class="firstthree">FONDANT NAME</p><br>
+                <input class="w3-input" type="text" maxlength="10" placeholder="Max 10 Characters" id="Name">
+                <br>
+                <p class="firstthree">Please Select The Type Of Cake</p>
+                <br>
+                <select class="w3-select" name="option" id="Select">
+                    <option value="cheesecake">Cheesecake</option>
+                    <option value="chocolatecake">Chocolate Cake</option>
+                    <option value="bananacake">Banana Cake</option>
+                </select>
+                <br><br>
+                <p class="firstthree">MESSAGE ON CAKE/CAKEBOARD</p><br>
+                <input class="w3-input" type="text" maxlength="25" placeholder="Max 25 Characters" id="message">
+            </div>
+
+
+        </div>
+        <br>
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <br>
+        <div class="w3-row">
+
+            <div class="w3-col w3-container" style="width:30%"></div>
+
+            <div class="w3-col w3-container" style="width:25%">
+                <button onclick="removal()" class="button-27">Back to the Bakery</button>
+
+            </div>
+            <div class="w3-col w3-container" style="width:30%">
+                <button onclick="saveSelection()" class="button-27">Save Selection</button>
+            </div>
+            
+
+            <div class="w3-col w3-container" style="width:15%"></div>
+
+
+        </div>
+        <br><br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:25%">
+                <p class="firstfour">Cake Details</p>
+            </div>
+            <div class="w3-col w3-container" style="width:65%"></div>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:90%">
+                <p class="firstthree">Who needs a real mirror when you can admire your reflection on a cake?</p>
+                <p class="firstthree">Send it to your loved ones and take a selfie with it!</p>
+            </div>
+        </div>
+        <Br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:90%">
+                <p class="firstthree">*All serving suggestions are approx. only</p>
+            </div>
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:90%">
+                <p class="firstthree">*Kindly take note that there may be slight variations in design & colours as everything is hand-made from scratch</p>
+                <br>
+                <p class="firstthree">*The edge of the mirror is trimmed, and safe to be placed on the cake. It can be reused after cleaning</p>
+            </div>
+
+
+        </div>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:10%"></div>
+            <div class="w3-col w3-container" style="width:90%">
+                <p class="firstthree">*Complimentary candle and cake knife</p>
+            </div>
+        </div>
+
+
+
+ 	<div class="w3-row">
+		<div class="w3-col w3-container" style="width:15%"></div>
+		<div class="w3-col w3-container" style="width:70%"><hr></div>
+		<div class="w3-col w3-container" style="width:15%"></div>
+	</div>
+	<br>              <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:70%">
+            <hr>
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:35%">
+  
+            <p class="contact">CONTACT US</p>
+            <br>
+            <p class="contact2">+65 6666 9999</p>
+            <br>
+            <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+            <br>
+            <p class="contact2">tchinfo@chanenshotel.com</p>
+  
+        </div>
+  
+  
+  
+        <div class="w3-col w3-container" style="width:35%">
+            <p class="contact">GET IN TOUCH</p>
+            <br>
+            <p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+            <br>
+            <form action="email.html" method="post">
+                <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                    onclick="sudmit()" class="submit-button">
+            </form>
+            <h2></h2>
+  
+  
+  
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+      <div class="w3-col w3-container" style="width:18.5%"></div>
+      <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+      <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+      <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+      <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:27.5%"></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+        <div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+    </div>
+
+
+    <br><br>
+	<footer>
+		<p>&copy; 2023 Chanens Hotel. All rights reserved.</p>
+	  </footer>
+	  
+
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function () {
+            var selectedImage = document.getElementById('selectedImage');
+            var cakeNameElement = document.getElementById('cakeName');
+            var cakeName = localStorage.getItem("cakeName");
+        
+            if (cakeName) {
+                cakeNameElement.textContent = cakeName;
+                selectedImage.src = localStorage.getItem("selectedImage");
+            } else {
+                selectedImage.style.display = "none";
+                cakeNameElement.textContent = "No cake selected.";
+            }
+        });
+        
+        function submitForm() {
+            const email = document.getElementById('email').value;
+            localStorage.setItem("EMAIL", email);
+            return;
+        }
+        
+        window.addEventListener('DOMContentLoaded', function () {
+            var cakeNamesElement = document.getElementById('cakeNames');
+            var cakeNames = localStorage.getItem("cakeName");
+        
+            if (cakeNames) {
+                cakeNamesElement.textContent = cakeNames;
+            } else {
+                cakeNamesElement.textContent = "No cake selected.";
+            }
+        });
+        
+        
+
+
+        
+    </script>
+</body>
+
+</html>

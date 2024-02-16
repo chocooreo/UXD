@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Booking </title>
+    <link rel="stylesheet" href="styleeight.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script>
+
+    function showGuestPopup() {
+        document.getElementById("guestPopup").style.display = "block";
+    }
+
+    function hideGuestPopup() {
+        document.getElementById("guestPopup").style.display = "none";
+    }
+
+
+
+    function showGuestPopup1() {
+        document.getElementById("guestPopup1").style.display = "block";
+    }
+
+    function hideGuestPopup1() {
+        document.getElementById("guestPopup1").style.display = "none";
+    }
+
+
+    function showGuestPopup2() {
+        document.getElementById("Popup2").style.display = "block";
+    }
+
+    function hideGuestPopup2() {
+        document.getElementById("Popup2").style.display = "none";
+    }
+    
+    function showGuestPopup3() {
+        document.getElementById("Popup3").style.display = "block";
+    }
+
+    function hideGuestPopup3() {
+        document.getElementById("Popup3").style.display = "none";
+    }
+
+
+    function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+
+    function sudmit(){
+
+        const email = document.getElementById('email').value
+        localStorage.setItem("EMAIL", email);
+        return
+    }
+    function date() {
+        const selectedValue = document.getElementById("date").value;
+        document.getElementById('dates').innerText = selectedValue;
+
+
+    }
+    
+
+    function time() {
+        const selectedValue = document.getElementById("time").value;
+        document.getElementById('times').innerText = selectedValue;
+
+
+    }
+
+    function guest1() {
+        const selectedValue = document.getElementById("guestSelect1").value;
+        document.getElementById('guest12').innerText = selectedValue;
+            document.getElementById('guest1').innerText = selectedValue;
+
+    }
+
+    function guest() {
+        const selectedValue = document.getElementById("guestSelect").value;
+        document.getElementById('guests').innerText = selectedValue;
+            document.getElementById('guest').innerText = selectedValue;
+
+    }
+
+    function pay() {
+        const amt = document.getElementById('money').textContent; 
+        localStorage.setItem("amount", amt);
+        window.location.href = 'payment.html';
+    }
+
+</script>
+
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <img src="../Img/chanenslogo.PNG" class="logo">
+                <ul class="menulist">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide")
+        }
+    
+    </script>
+    
+    
+        <video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+        height: 650px;
+        object-fit: cover;" id="main">
+		<source src="../mp4/booking.mp4" type="video/mp4">
+	  </video>
+
+    <br>
+    
+        <div class="w3-row ">
+            <div class="w3-col w3-container" style="width:100%"><p class="home"><a href="#" class="hyperlink1">Home</a>><a href="MainPageDinning.html" class="hyperlink1">Dinning Page</a>><a>Book Now</a></div>
+           
+            <div class="w3-col w3-container " style="width: 100%"><h1 class="Welcome">Chanens Hotel Singapore</h1>
+                </div>
+                </div>
+
+                <div class="w3-row ">  
+                      <div class="w3-col w3-container " style="width: 23%">
+                </div>
+                    <div class="w3-col w3-container" style="width: 25%">            <i class="material-icons" style="font-size: 36px">restaurant &#160;&#160;</i><label class="first" id="rest"></label></div>
+                    <div class="w3-col w3-container " style="width: 40%">    <i class="fa fa-male" style="font-size: 36px" onclick="showGuestPopup()"></i>&#160;&#160;<label class="first" onclick="showGuestPopup()">Adults:&#160;</label><label class="first" id="guest"></label>
+                        
+
+                        &#160;&#160;                        &#160;&#160;&#160;<i class="fa fa-child" style="font-size: 36px" onclick="showGuestPopup1()"></i>&#160;<label class="first" onclick="showGuestPopup1()">Children:&#160;</label><label class="first" id="guest1"></label>
+
+                        </div>
+                
+
+    </div>
+<br>
+
+
+    <div class="w3-row ">  
+        <div class="w3-col w3-container " style="width: 23%">
+  </div>
+      <div class="w3-col w3-container" style="width: 5%">            <i class="fa fa-calendar" style="font-size:36px"></i> </div>
+      <div class="w3-col w3-container" style="width: 45%">             <input class="w3-input " type="date" id="date" onchange="date()"> </div>
+    </div>
+
+<br>
+    <div class="w3-row ">  
+        <div class="w3-col w3-container " style="width: 23%">
+  </div>
+      <div class="w3-col w3-container" style="width: 5%">         <i class='fas fa-clock' style='font-size:36px'></i> </div>
+      <div class="w3-col w3-container" style="width: 45%">             <input class="w3-input "type="time" id="time" onchange="time()" > </div>
+    </div>
+    <br>
+    <div class="w3-row ">  
+        <div class="w3-col w3-container " style="width: 40%">
+  </div>
+
+  <div class="w3-col w3-container " style="width: 19%"><p class="hyperlink" onclick="showGuestPopup2()">Details On Payment</p>
+</div>
+
+  <div class="w3-col w3-container " style="width: 30%">
+    <button onclick="showGuestPopup3()"class="submit-button1">Procced To Payment</button>
+</div>
+
+    </div>  
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:100%">
+          <h1 class="Welcome">-Dining Reviews-</h1>
+        </div>
+      </div>
+      <div class="w3-row">
+        <div class="w3-col w3-container" style="width:50%">
+      <div class="w3-container w3-card w3-white w3-round w3-margin">
+        <h3><i style="font-size:36px" class="fa">&#xf006;</i> Reviews</h3>
+        <p class="first3">
+            Chanes Hotel was perfect for my business trip to Singapore. Convenient location, well-equipped rooms, professional staff, and delicious restaurant meals. Highly recommended for fellow business travelers!</p>
+        <p>Reviewer: John Doe</p>
+      </div>
+      </div>
+      
+      <div class="w3-col w3-container" style="width:50%">
+      <div class="w3-container w3-card w3-white w3-round w3-margin">
+        <h3><i style="font-size:36px" class="fa">&#xf006;</i> Reviews</h3>
+        <p class="first3"> 
+            Wonderful stay at Chanes Hotel Singapore! Welcoming staff, spacious and clean rooms, excellent dining, and great location. Highly recommend! Will return!
+
+        </p>
+        <p>Reviewer: Jane Smith</p>
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+      <div class="w3-row">
+        <div class="w3-col w3-container" style="width:50%">
+      <div class="w3-container w3-card w3-white w3-round w3-margin">
+        <h3><i style="font-size:36px" class="fa">&#xf006;</i> Reviews</h3>
+        <p class="first3">
+            Wonderful stay at Chanes Hotel! Friendly staff, clean rooms, and delicious meals at the restaurant. Highly recommended for travelers!</p>
+        <p>Reviewer: Michael Adams</p>
+      </div>
+      </div>
+      
+      <div class="w3-col w3-container" style="width:50%">
+      <div class="w3-container w3-card w3-white w3-round w3-margin">
+        <h3><i style="font-size:36px" class="fa">&#xf006;</i> Reviews</h3>
+        <p class="first3"> 
+            Memorable stay at Chanes Hotel Singapore! Perfect location, spacious rooms, and helpful staff. Highly recommend!</p>
+        </p>
+        <p>Reviewer: Joy Chua</p>
+      </div>
+      </div>
+      </div>
+    <br>              <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:70%">
+            <hr>
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:35%">
+  
+            <p class="contact">CONTACT US</p>
+            <br>
+            <p class="contact2">+65 6666 9999</p>
+            <br>
+            <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+            <br>
+            <p class="contact2">tchinfo@chanenshotel.com</p>
+  
+        </div>
+  
+  
+  
+        <div class="w3-col w3-container" style="width:35%">
+            <p class="contact">GET IN TOUCH</p>
+            <br>
+            <p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+            <br>
+            <form action="../contact us.html" method="post">
+                <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                    onclick="sudmit()" class="submit-button">
+            </form>
+            <h2></h2>
+  
+  
+  
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+      <div class="w3-col w3-container" style="width:18.5%"></div>
+      <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+      <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+      <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+      <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:27.5%"></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+        <div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+    </div>
+
+      <div id="guestPopup" class="popup">
+        <h1 class="Welcome">How Many Aldults</h1>
+        <p class="first3">Max  15 People</p>
+        <br>
+        <select id="guestSelect" class="w3-select" onchange="guest()">
+            <option value="0" >0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+
+        </select>
+        <br>
+        <br>
+        <button onclick="hideGuestPopup()">Submit</button>
+    </div>  
+
+
+
+    <div id="guestPopup1" class="popup">
+        <h1 class="Welcome">How Many Children</h1>
+        <p class="first3">Max  15 People</p>
+        <br>
+        <select id="guestSelect1" class="w3-select" onchange="guest1()">
+            <option value="0" >0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+
+        </select>
+        <br>
+        <br>
+        <button onclick="hideGuestPopup1()">Submit</button>
+    </div> 
+
+    <div id="Popup2" class="popup">
+        <h1 class="Welcome">Details On Payment</h1>
+        <p class="first3">To secure your dining reservation at Chanes Hotel, we kindly request a hold of <label id ="money">$100</label> from your bank account. This is a standard procedure as part of our company policy to ensure the availability of the reserved dining space. Rest assured that this amount will not be charged to your account and will be released back after your dining experience. </p>
+        <br>
+    
+        <p class="first3">Thank you for choosing Chanes Hotel!</p>
+        <br>
+        
+        <button onclick="hideGuestPopup2()">Back</button>
+    </div>
+
+
+
+    <div id="Popup3" class="popup">
+        <h1 class="Welcome">Confirimation</h1>
+<p class="first3"> <i class="material-icons" style="font-size: 36px">restaurant &#160;&#160;</i><label class="first" id="rests"></label>
+    <br>    <br>
+
+    <i class="fa fa-male" style="font-size: 36px"></i>&#160;&#160;<label class="first">Adults:&#160;</label><label class="first" id="guests"></label>
+    <br>    <br>
+    <i class="fa fa-child" style="font-size: 36px"></i>&#160;<label class="first">Children:&#160;</label><label class="first" id="guest12"></label>
+    <br>    <br>
+    <i class="fa fa-calendar" style="font-size:36px"></i>&#160;<label class="first">Date:&#160;</label><label class="first" id="dates"></label>
+    <br>    <br>
+    <i class='fas fa-clock' style='font-size:36px'></i>
+</i>&#160;<label class="first">Time:&#160;</label><label class="first" id="times"></label>
+<br>  <br>    <div class="w3-row">
+    <div class="w3-col w3-container" style="width:40%">
+<button onclick="hideGuestPopup3()">Back</button>
+</div>    <div class="w3-col w3-container" style="width:60%">
+    <button onclick="pay()">To payment</button>
+    </div>
+</div>
+    </div>
+    
+    </body>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var rest = document.getElementById('rest');
+            var restz = localStorage.getItem("amt");
+            rest.textContent = restz; 
+
+            var resting = document.getElementById('rests');
+            var resta = localStorage.getItem("amt");
+            resting.textContent = resta; 
+            guest();
+            guest1() 
+        });
+
+        window.addEventListener('load', function() {
+            document.getElementById("guestPopup").style.display = "none";
+            document.getElementById("guestPopup1").style.display = "none";
+            document.getElementById("Popup2").style.display = "none";
+            document.getElementById("Popup3").style.display = "none";
+            localStorage.removeItem("amt");
+        });
+        window.addEventListener('scroll', function () {
+			const bg = document.getElementById('main');
+			bg.style.backgroundSize = '100%'; // Set a fixed background size
+			bg.style.opacity = 1 - window.pageYOffset / 700;
+		  });
+
+    </script>
+    <script>
+        // The provided JavaScript code for setting the minimum date
+        const dateInput = document.getElementById('date');
+      
+        // Get the current date in the local time zone
+        const currentDate = new Date().toLocaleDateString('en-CA'); // Replace 'en-CA' with your desired locale
+      
+        // Set the minimum attribute of the date input to the current date
+        dateInput.setAttribute('min', currentDate);
+      </script>
+    </html>

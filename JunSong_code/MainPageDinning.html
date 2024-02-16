@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Main Page Dining</title>
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+    <link rel="stylesheet" href="styling.css">
+
+	
+	<link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+	<script>		function myFunction() {
+		var x = document.getElementById("demo");
+		if (x.className.indexOf("w3-show") == -1) {
+			x.className += " w3-show";
+		} else {
+			x.className = x.className.replace(" w3-show", "");
+		}
+	}
+
+
+
+	
+	function sudmit(){
+
+		const email = document.getElementById('email').value
+		localStorage.setItem("EMAIL", email);
+		return
+	}
+
+
+	function next(){
+
+		const amt = document.getElementById('amt').textContent; 
+				localStorage.setItem("amt", amt);
+
+
+
+
+				window.location.href = 'Book.html';
+	}
+
+	function nexts(){
+
+
+		const amts = document.getElementById('amts').textContent; 
+				localStorage.setItem("amt", amts);
+				window.location.href = 'Book.html';
+	}
+
+
+	function nextz(){
+
+
+		const amtz = document.getElementById('amtz').textContent; 
+				localStorage.setItem("amt", amtz);
+				window.location.href = 'Book.html';
+	}</script>
+</head>
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <img src="../Img/chanenslogo.PNG" class="logo">
+                <ul class="menulist">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                    <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                    <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                    <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                            AND EVENTS</a></li>
+                    <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                    <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide")
+        }
+    
+    </script>
+</head>
+<body>
+    
+    
+        
+        <video autoplay loop muted playsinline class="w3-image" id="main" style="width: 1700px; height: 620px; object-fit: cover;">
+            <source src="../mp4/main.mp4" type="video/mp4">
+          </video>
+        </div>
+    
+    
+        <div class="w3-row">
+        <div class="w3-col w3-container" style="width:100%"><p class="home"><a href="chanens index.html" class="hyperlink">Home</a> > Dining Page.</p></div>
+        <div class="w3-col w3-container " style="width:100%"><h1 class="Dinningword">Restaurants and Bar</h1></div>
+        <div class="w3-col w3-container" style="width:100%"><h1 class="Welcome">-Discover Singapore Restraunts-</h1></div>
+        </div>
+    
+    
+    
+        <div class="w3-row">
+        <div class="w3-col w3-container" style="width:23.5%"></div>
+        <div class="w3-col w3-container" style="width:55%"><h1 class="first">Indulge in a diverse range of culinary delights from both Singapore and around the globe, ranging from delectable local dishes to international favorites like dim sum.</h1></div>
+        <div class="w3-col w3-container" style="width:22.5%"></div>
+        </div>
+    
+        <div class="w3-row"><div class="w3-col w3-container" style="width:25.5%"></div>
+        <div class="w3-col w3-container" style="width:50%"><h1 class="first">At <a href="Merlion.html" class="hyperlink1" id="amtz">-Merlion's Cove-</a>, you can experience all-day dining with a blend of local and international flavors. Additionally, you can savor traditional satay and ice-cold craft beers while relaxing on the restaurant's al fresco terrace that overlooks the scenic Singapore River.</h1><br></div>
+        <div class="w3-col w3-container" style="width:23.5%"></div></div>
+    
+        <div class="w3-row">
+        <div class="w3-col w3-container" style="width:25.5%"></div>
+        <div class="w3-col w3-container" style="width:50%"><h1 class="first">Relish in the experience of an exquisite three-tiered Afternoon Tea in Singapore at <a href="bar.html" class="hyperlink1" id="amts">-Tranquil Brews-</a> sunlit atrium. Indulge in an array of delectable dainty savouries and sweets, accompanied by free-flowing coffee or tea.</h1></div>
+        <div class="w3-col w3-container" style="width:23.5%"></div>
+        </div>
+    
+    <br>
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:25.5%"></div>
+            <div class="w3-col w3-container" style="width:50%"><h1 class="first">
+                Indulge in the delicate and refined offerings of Chinese cuisine at <a href="Imper.html" class="hyperlink1" id="amt">-Imperial Kitchen-</a>
+            </h1></div>
+            <div class="w3-col w3-container" style="width:23.5%"></div>
+            </div>
+       
+       
+       
+            <br>     
+            <div class="w3-row">
+                <div class="w3-col w3-container m1"></div>
+                <div class="w3-col s12 m5">
+                    <div class=" w3-container w3-padding" style="width: 100%;">
+                        <a href="Merlion.html" class="Hightea">
+                        <video autoplay loop muted playsinline class="w3-image">
+                            <source src="../Mp4/mer.mp4" type="video/mp4">
+                        </video></a>
+                        <div class="w3-container">
+                            <hr class="Hello"/>
+                            <h1 class="Cove1" >Merlion Clove</h1>
+                            <p class="firstpara">Perfect for starting your day with a hearty breakfast, enjoying a diverse lunch from around the world, indulging in a leisurely brunch, or savoring a delightful dinner buffet while overlooking the scenic Singapore River.</p>
+                            <br>
+                            <a href="Merlion.html" class="hyperlink2" id="myButton">>Read More&lt;</a>
+                            <a  id="myButton1" class="hyperlink3" onclick="nextz()">Reserve Now!</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="w3-col s12 m5">
+                    <div class=" w3-container w3-padding" style="width: 100%;">
+                        <a href="bar.html" class="Hightea">
+			<video autoplay loop muted playsinline class="w3-image">
+				<source src="../Mp4/food.mp4" type="video/mp4">
+			  </video>
+			</a>
+                        <div class="w3-container">
+                            <hr class="Hello"/>
+			
+			
+                            <h1 class="Cove1" >Tranquil Brews</h1>
+                            
+                            
+                            <p class="firstpara">Experience a vibrant and enduring ambiance for relaxed dining, featuring a diverse menu of local and international cuisine and the cherished tradition of daily three-tier English Afternoon Tea, served at the heart of the historic hotel</p>
+                            <br>
+                            <a href="bar.html" class="hyperlink2">>Read More&lt;</a>
+                            <a  id="myButton1" class="hyperlink3" onclick="nexts()">Reserve Now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<br>
+            <div class="w3-row">
+                <div class="w3-col w3-container m1  "></div>
+                <div class="w3-col s12 m5">
+                    <div class=" w3-container w3-padding" style="width: 100%;">
+                        <a href="../Mp4/Imper.html" class="Hightea">
+					
+                            <video autoplay loop muted playsinline class=" w3-image">
+                                <source src="../Mp4/chines.mp4" type="video/mp4">
+                              </video>
+                              </a>
+                        <div class="w3-container">
+                            <hr class="Hello"/>
+                            <h1 class="Cove1" >-Imperial Kitchen-</h1>
+                            
+                            <p class="firstpara">The renowned Imperial Kitchen restaurant effortlessly blends exquisite Chinese cuisine, gracious hospitality, and a stellar reputation, reminiscent of a valuable gem</p>
+                            <br>
+                            <a href="Imper.html" class="hyperlink2">>Read More&lt;</a>
+                            <a  class="hyperlink3" onclick="next()">Reserve Now!</a>
+                        </div>
+                    </div>
+                </div>
+      
+                <div class="w3-col s12 m5">
+                    <div class=" w3-container w3-padding" style="width: 100%;">
+          		
+                        <a href="Bakery.html" class="Cake1 ">
+					
+					
+                            <video autoplay loop muted playsinline class="w3-image">
+                                <source src="../Mp4/bake.mp4" type="video/mp4">
+                              </video>
+                        
+                        
+                        </a>
+			
+                        <div class="w3-container">
+                            <hr class="Hello"/>
+                            <h1 class="Cove1" >-Chanes Bakery-</h1>
+                            <p class="firstpara">Experience pure moments of deliciousness by indulging in delightful experiences together or treating yourself to delectable treats at the one Chanes Bakery</p>
+                            <br>
+                            <a href="Bakery.html" class="hyperlink2">>Read More&lt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <br>
+			<div class="w3-row">
+				<div class="w3-col w3-container" style="width:15%"></div>
+				<div class="w3-col w3-container" style="width:70%">
+					<hr>
+				</div>
+				<div class="w3-col w3-container" style="width:15%"></div>
+			</div>
+			<br>
+			<div class="w3-row">
+				<div class="w3-col w3-container" style="width:15%"></div>
+				<div class="w3-col w3-container" style="width:35%">
+		  
+					<p class="contact">CONTACT US</p>
+					<br>
+					<p class="contact2">+65 6666 9999</p>
+					<br>
+					<p class="contact2">1 Oxley Rise, Singapore 238714</p>
+					<br>
+					<p class="contact2">tchinfo@chanenshotel.com</p>
+		  
+				</div>
+		  
+		  
+		  
+				<div class="w3-col w3-container" style="width:35%">
+					<p class="contact">GET IN TOUCH</p>
+					<br>
+					<p class="contact2">Sign up now to receive special offers and promotions</p>
+		  
+					<br>
+					<form action="../contact us.html" method="post">
+						<input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+							onclick="sudmit()" class="submit-button">
+					</form>
+					<h2></h2>
+		  
+		  
+		  
+				</div>
+				<div class="w3-col w3-container" style="width:15%"></div>
+			</div>
+			<br>
+			<div class="w3-row">
+			  <div class="w3-col w3-container" style="width:18.5%"></div>
+			  <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+			  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+			  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+			  <div class="w3-col w3-container" style="width:35%"></div>
+		  
+		  </div>
+			<br>
+			<div class="w3-row">
+				<div class="w3-col w3-container" style="width:27.5%"></div>
+				<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+							src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+				<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+							src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+				<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+							src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+				<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+							src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+				<div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+							src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+		  
+		  
+		  
+		  
+		  
+				<div class="w3-col w3-container" style="width:25%"></div>
+		  
+		  
+		  
+		  
+			</div>
+
+
+
+
+
+
+
+
+
+<br><br>    <footer>
+	&copy; 2023 Chanens Hotel. All rights reserved.
+	  </footer>
+</body>
+
+</div>
+</div>
+</body>
+
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function () {
+			const bg = document.getElementById('main');
+			bg.style.backgroundSize = '100%'; // Set a fixed background size
+			bg.style.opacity = 1 - window.pageYOffset / 700;
+			
+		  });
+
+
+	</script>
+
+
+
+
+</body>
+
+</html>

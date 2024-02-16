@@ -1,0 +1,341 @@
+
+body{
+    background-color: white;
+    overflow-x: hidden;
+      
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: adam;
+    src: url(Adam-Medium.ttf)
+}
+
+@font-face{
+    font-family: vogue;
+    src: url(SandeMoreDemo-Bold.otf)
+}
+
+
+.first
+  {
+
+    font-size: 30px;
+
+    font-family: adam;
+  }
+
+
+  .hyperlink{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px; /* Add padding */
+    cursor: pointer;
+    
+   }
+   .hyperlink:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .Hightea
+  {
+    cursor: pointer;
+
+    width: 500px;
+    height: 350px;
+  }
+  .firstpara{
+
+    font-size: 20px;
+  
+    font-family: adam;
+ text-align: left;
+  }
+.Right{
+  font-family: adam;
+}
+.Rights{
+  font-family: vouge;
+}
+  .hyperlink2{
+    text-decoration: none;
+
+    font-family: adam;
+font-size: 20px;
+    width: 100%;
+  text-align: left;
+   }
+   .hyperlink2:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink2:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink2:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  .hyperlink3{
+    text-decoration: none;
+
+    font-family: adam;
+font-size: 20px;
+
+  float: right;
+   }
+   .hyperlink3:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink3:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink3:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+.Cove1{
+
+
+font-family: adam;
+ font-size:40px;
+}
+.contact{
+
+    font-size: 20px;
+}
+.contact2{
+
+    font-size: 18px;
+}
+.hyperlink4{
+    text-decoration: none;
+
+float: left;
+font-size: 18px;
+
+float: right;
+   }
+   .hyperlink4:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink4:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink4:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+    .submit-button {
+    background-color: black; /* Set the background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 4px; /* Add border radius */
+
+  }
+
+  .instag{
+
+    width: 50px;
+  }
+
+  .hyperlink5{
+    text-decoration: none;
+
+float: left;
+font-size: 22px;
+
+float: right;
+   }
+   .hyperlink5:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .hyperlink5:hover {
+    color: goldenrod;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .hyperlink5:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .img {
+    width: 100%
+  }
+  .scroll {
+          overflow: scroll;
+          height: 350px;
+  
+        }
+.faith{
+
+
+  font-size: 35px;
+}
+.Phone{
+
+
+  height: 50px;
+}
+
+.Number{
+  font-family: adam;
+  font-size: 25px;
+}
+.cart-button{
+    height: 20px;
+}
+.first1
+  {
+
+
+
+    font-size: 25px;
+    font-weight: bold;
+  
+    border-radius: 5px;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.4);
+
+  }
+
+
+.firstfour{
+
+    font-size: 40px;
+    font-family: adam;
+}
+
+#pop {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    transition: left 0.3s ease;
+  }
+
+
+
+  #toggle-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .firstz
+  {
+
+    font-size: 25px;
+    text-align: center;
+  }
+#sidePopup{
+
+float: left;
+
+
+  }
+
+
+.import{
+  font-size: 25px;
+  font-family: adam;
+}
+.dine{
+
+    background-color:  #f5f5f5 ;
+
+    max-width: 1000px;
+    margin: 10px auto;
+
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 110px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 9999;
+}
+
+
+
+
+
+.popup button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-family: adam;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: grey;
+}
+
+.w3-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 16px;
+  }
+
+  .w3-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .first3{
+
+
+    font-family: adam;
+    font-size: 19px;
+  }

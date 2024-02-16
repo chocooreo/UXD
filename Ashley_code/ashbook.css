@@ -1,0 +1,55 @@
+form {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 80%;
+    background: white;
+    border-radius: 15px;
+}
+
+form #formgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#formgrid > div {
+    flex: 25%;
+    margin: 15px;
+    padding: 1px;
+    min-width: 100px;
+}
+
+#time, #date {
+    display: flex;
+    align-items: center;
+}
+
+#time input, #date input {
+    display: inline-block;
+    margin-left: 10px;
+    width: calc(100% - 40px);
+}
+
+form #terms, form #submit {
+    display: inline-block;
+    width: 49%;
+}
+
+form #submit {
+    display: inline-flex;
+    justify-content: end;
+}
+
+@media (max-width: 400px) {
+    form #terms, form #submit {
+        width: 100%;
+    }
+    form #terms {
+        margin-bottom: 20px;
+    }
+    form #submit {
+        justify-content: start;
+    }
+}

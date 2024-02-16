@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Chanens Hotel | Merlion Cove</title>
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+
+	<link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        function validateForm() {
+            const email = document.getElementById('email').value
+            localStorage.setItem("EMAIL", email);
+            return
+
+          }
+        function sudmit(){
+    
+            const email = document.getElementById('email').value
+            localStorage.setItem("EMAIL", email);
+            return
+        }
+        function next(){
+    
+            const amt = document.getElementById('amt').textContent; 
+                    localStorage.setItem("amt", amt);
+                    window.location.href = 'Book.html';
+        }
+
+        function nexts(){
+
+
+            const amts = document.getElementById('amts').textContent; 
+                    localStorage.setItem("amt", amts);
+                    window.location.href = 'Book.html';
+        }
+    </script>
+</head>
+
+<body>
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="../Img/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+	
+	</script>
+
+	
+    <video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+    height: 650px;
+    object-fit: cover;" id="main">
+		<source src="../mp4/mer1.mp4" type="video/mp4">
+	  </video>
+	<br>
+
+	<div class="w3-row">
+	<div class="w3-col w3-container" style="width:100%"><p class="home"><a href="chanens index.html" class="hyperlink">Home</a> ><a href="MainPageDinning.html" class="hyperlink">Dinning Page</a>><a> Merlion cove</a></div>
+	<div class="w3-col w3-container " style="width:100%"><h1 class="Dinningword">Restaurants and Bar</h1></div>
+	<div class="w3-col w3-container" style="width:100%"><h1 class="Welcome" id="amt">-MERLION COVE-</h1></div>
+	</div>
+
+
+
+	<div class="w3-row">
+	<div class="w3-col w3-container" style="width:22.5%"></div>
+	<div class="w3-col w3-container" style="width:55%"><h1 class="first">Situated at the center of the esteemed Fullerton Building, Merlion Cove presents an enduring ambiance perfect for indulging in leisurely dining and afternoon tea.</h1></div>
+	<div class="w3-col w3-container" style="width:22.5%"></div>
+	</div>
+
+	<div class="w3-row"><div class="w3-col w3-container" style="width:23.5%"></div>
+	<div class="w3-col w3-container" style="width:50%"><h1 class="first">Remaining faithful to the English tradition, Merlion Cove Traditional Afternoon Tea offers a delightful array of expertly crafted sandwiches and exquisite pastries. Accompanied by the enchanting melodies of a harpist, the high-ceiling atrium becomes a captivating setting on selected days.</h1><br></div>
+	<div class="w3-col w3-container" style="width:23.5%"></div></div>
+
+	<div class="w3-row">
+	<div class="w3-col w3-container" style="width:22%"></div>
+	<div class="w3-col w3-container" style="width:55%"><h1 class="first">Indulge in a delightful selection of time-honored teatime classics at Merlion Cove. Delight in the sophistication of the cucumber sandwich, a beloved favorite of Victorian-era aristocrats. Savor the distinctively English Battenberg Cake, originally crafted in 1884 as the royal wedding cake for Princess Victoria and Prince Louis of the Battenberg family, a dessert that epitomizes quintessential English indulgence.</h1></div>
+	<div class="w3-col w3-container" style="width:23.5%"></div>
+	</div>
+    <br>
+    <div class="w3-col w3-container m2"></div>
+    <div class="w3-col s12 m4">
+        <div class=" w3-container  w3-padding " style="width: 100%;">
+            <div class="image fade w3-image" >
+                <img src="../Img/high1234.jpg" alt="Cake" class="w3-image">
+                </div>    
+        </div>
+    </div>
+    
+    <div class="w3-col s12 m4">
+        <div class="  w3-padding" style="width: 100%;">
+
+
+            <div class="scroll">
+
+                <a href="#" class="hyperlink2" onclick="next()">Reserve Now!</a>
+                <br>
+                
+                <hr class="HR">
+            <h1 class="NOW">
+            Operational Hours
+            </h1>
+            
+            <p class="Right">Moring Refreshment</p>
+            <br>
+            <p class="Rights">-Monday to Sunday, 10.30 a.m. to 12.00 p.m.</p>
+            <br>
+            
+            <p class="Right">Lunch </p>
+            <br>
+            <p class="Rights">
+                Monday to Sunday, 12.00 p.m. to 2.30 p.m.</p>
+                <br>
+            
+                <p class="Right">Traditional Afternoon Tea </p>
+                <br>
+                <p class="Rights">
+            Monday to Friday, 3.00 p.m. to 5.30 p.m. </p>
+            
+            <p class="Rights">S$51* per adult inclusive of a one-time serving of afternoon tea items, a cup of tea or coffee; S$26* per child^
+                Saturday, Sunday and Public Holidays, 
+                </p>
+            <p class="Rights">    First Seating: 12.00 p.m. to 2.30 p.m.;</p>
+            <p class="Rights">      Second Seating: 3.30 p.m. to 6.00 p.m.</p>
+            <p class="Rights">    S$56* per adult, S$28* per child^ inclusive of a one-time serving of afternoon tea items, a cup of tea or coffee
+                Prices differ from 1 June 2023 onwards.</p>
+            <br>
+            
+            <p class="Right">As of 1 June 2023: </p>
+            <br>
+            <p class="Rights    ">Monday To Sunday</p>
+            <p class="Rights">First Seating: 12.00 p.m. to 2.30 p.m.; Second Seating: 3.30 p.m. to 6.00 p.m.
+                S$53* per adult; S$26.50* per child^ (Monday to Thursday)
+                S$58* per adult; S$29* per child^ (Friday to Sunday)
+                Prices differ from 16 to 18 June 2023.</p>
+            <br>
+            
+            <p class="Right">Father's Day Afternoon Tea</p>
+            
+            <p class="Rights123">Friday to Sunday, 16 to 18 June 2023</p>
+            <p class="Rights">First Seating: 12.00 p.m. to 2.30 p.m.;
+                Second Seating: 3.30 p.m. to 6.00 p.m.
+                S$60* per adult; S$30* per child^</p>
+            <br>
+            
+            <p class="Right">FOR ASSISTANCE</p>
+            
+            <p class="Rights123">Call: (65) 3129 8167</p>
+            <p class="Rights"> Email: <a>dining-rsvp@fullertonhotels.com</a></p>
+            <br>
+            <p class="Right">Further Details</p>
+            
+            <p class="Rights123">Operation hours and prices may differ on festive period, special occasions, eve of and on public holidays. View our dining offers for more information.</p>
+            <p class="Rights"> *Prices are subject to service charge and prevailing government taxes. ^Children from 6 to 11 years old.</a></p>
+            <br>
+            
+        </div>
+        <div class="w3-col w3-container m2"></div>
+    </div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:35%"></div>
+
+        <div class="w3-col w3-container" style="width:50%">
+
+            <p class="faith">Book Your Table Now!</p>
+
+            
+        </div>
+
+
+        <div class="w3-col w3-container" style="width:20%"></div>
+
+        
+        </div>
+
+
+        <br>
+
+            <div class="w3-row">
+                
+            
+                <div class="w3-col w3-container" style="width:30%"></div>
+                <div class="w3-col w3-container" style="width:28%"><img src="../Img/Phone.jpg" class="Phone"></div>
+                <div class="w3-col w3-container" style="width:15%"><img src="../Img/Email.png" class="Phone"></div>
+                <div class="w3-col w3-container" style="width:15%"></div>
+            
+            </div>
+
+            <div class="w3-row">
+                
+            <div class="w3-col w3-container" style="width:30%"></div>
+            <div class="w3-col w3-container" style="width:28%"><p class="Number">+65 6666 9999</p></div>
+            <div class="w3-col w3-container" style="width:15%"><p class="Number">Chanens@gmail.com</p></div>
+            
+
+</div>
+
+<div class="w3-row">
+    <div class="w3-col w3-container m1  "></div>
+    <div class="w3-col s12 m5">
+        <div class=" w3-container w3-padding" style="width: 100%;">
+            <a href="../Mp4/Imper.html" class="Hightea">
+        
+                <video autoplay loop muted playsinline class=" w3-image">
+                    <source src="../Mp4/chines.mp4" type="video/mp4">
+                  </video>
+                  </a>
+                  <div class="w3-container">
+                    <hr class="Hello"/>
+                    <h1 class="Cove1" id="amts" >-Imperial Kitchen-</h1>
+                    
+                    <p class="firstpara">The renowned Imperial Kitchen restaurant effortlessly blends exquisite Chinese cuisine, gracious hospitality, and a stellar reputation, reminiscent of a valuable gem</p>
+                    <br>
+                    <a href="Imper.html" class="hyperlink2">>Read More&lt;</a>
+                    <a  class="hyperlink3" onclick="nexts()">Reserve Now!</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="w3-col s12 m5">
+        <div class=" w3-container w3-padding" style="width: 100%;">
+      
+            <a href="Bakery.html" class="Cake1 ">
+        
+        
+                <video autoplay loop muted playsinline class="w3-image">
+                    <source src="../Mp4/bake.mp4" type="video/mp4">
+                  </video>
+            
+            
+            </a>
+
+            <div class="w3-container">
+                <hr class="Hello"/>
+                <h1 class="Cove1" >-Chanes Bakery-</h1>
+                <p class="firstpara">Experience pure moments of deliciousness by indulging in delightful experiences together or treating yourself to delectable treats at the one Chanes Bakery</p>
+                <br>
+                <a href="Bakery.html" class="hyperlink2">>Read More&lt;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row">
+    <div class="w3-col w3-container" style="width:15%"></div>
+    <div class="w3-col w3-container" style="width:70%">
+        <hr>
+    </div>
+    <div class="w3-col w3-container" style="width:15%"></div>
+</div>
+<br>
+<div class="w3-row">
+    <div class="w3-col w3-container" style="width:15%"></div>
+    <div class="w3-col w3-container" style="width:35%">
+
+        <p class="contact">CONTACT US</p>
+        <br>
+        <p class="contact2">+65 6666 9999</p>
+        <br>
+        <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+        <br>
+        <p class="contact2">tchinfo@chanenshotel.com</p>
+
+    </div>
+
+
+
+    <div class="w3-col w3-container" style="width:35%">
+        <p class="contact">GET IN TOUCH</p>
+        <br>
+        <p class="contact2">Sign up now to receive special offers and promotions</p>
+
+        <br>
+        <form action="../contact us.html" method="post">
+            <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                onclick="sudmit()" class="submit-button">
+        </form>
+        <h2></h2>
+
+
+
+    </div>
+    <div class="w3-col w3-container" style="width:15%"></div>
+</div>
+<br>
+<div class="w3-row">
+  <div class="w3-col w3-container" style="width:18.5%"></div>
+  <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+  <div class="w3-col w3-container" style="width:35%"></div>
+
+</div>
+<br>
+<div class="w3-row">
+    <div class="w3-col w3-container" style="width:27.5%"></div>
+    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+
+
+
+
+
+    <div class="w3-col w3-container" style="width:25%"></div>
+
+
+
+
+</div>
+
+<br><br>
+<footer>
+    &copy; 2023 Chanens Hotel. All rights reserved.
+      </footer>
+</body>
+<script>
+window.addEventListener('scroll', function () {
+    const bg = document.getElementById('main');
+    bg.style.backgroundSize = '100%'; // Set a fixed background size
+    bg.style.opacity = 1 - window.pageYOffset / 700;
+  });
+</script>
+</html>

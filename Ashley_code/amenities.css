@@ -1,0 +1,200 @@
+/* CSS for Ammenities Page and Ammenities Booking Page */
+
+.Hotelcal {
+  text-align: center;
+  font-family: adam;
+}
+
+header {
+  font-family: adam;
+}
+.skid{
+  cursor: pointer;
+}
+/* CSS for Ammenities Page */
+
+body {
+  margin: 0 auto;
+  font-family: adam;
+}
+
+.style123 {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+
+}
+
+.style123:hover {
+  color: #696969;
+}
+
+.Width {
+  width: 200px;
+}
+
+.grid-container52 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container52>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  vertical-align: middle;
+  padding: 20px 0;
+  width: max-content;
+}
+.grid-container52>div>a {
+  font-size: 20px;
+}
+.grid-container52>.navstar {
+  padding-top: 23px;
+  width: 40px;
+}
+
+.facilities {
+  text-align: center;
+  width: 80%;
+  border: 1px;
+  margin: auto;
+  border-spacing: 0 10px;
+}
+
+.facilities-container {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid black;
+  margin-bottom: 20px;
+}
+
+/* div is a child element of the .facilities-container */
+.facilities-container > div { 
+  width: 50%;
+}
+
+.facilities-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 1100px) {
+  .facilities-container > div {
+    width: 100%
+  }
+}
+
+@media (min-width: 1100px) {
+  .facilities-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+h3 {
+  font-family: vogue;
+  font-size:45px;
+}
+
+p {
+
+  font-size: 20px;
+}
+.city{
+  font-size: 20px;
+  font-family: adam;
+  
+}
+
+.btn {
+  padding: 10px 10px;
+  background-color: gold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: adam;
+  float:none;
+  margin-top: 0%;
+  border:2px solid gold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid gold;
+}
+
+.grid-container51 {
+  display: grid;
+  grid-template-columns: auto 200px auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container51>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+
+
+
+/* CSS for Ammenities Booking Page */
+
+.booking {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 25px;
+  width: 60%;
+  background-color: #ededed;
+  border: 1px solid black;
+  padding: 1px;
+  font-size: 15px;
+}
+
+.booking td {
+  padding: 10px;
+}
+
+.submit {
+  width: 15%;
+  padding: 0.5%;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit:hover {
+  background-color: grey;
+  text-align: center;
+}
+
+/* CSS for Successful Booking Page */
+
+.successful {
+  border-radius: 50%;
+  width: 15%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+

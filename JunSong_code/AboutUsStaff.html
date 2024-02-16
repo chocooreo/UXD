@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Chanens Hotel | Our Staff</title>
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+    <link rel="stylesheet" href="abtstyle.css">
+    <link rel="stylesheet" href="awards.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+    <script>
+
+        const staff = [
+            { name: "Ignatius", email: "iggy@chanenshotel.com", phone: "+65 8132-6278" },
+            { name: "Rachel", email: "rachel@chanenshotel.com", phone: "+65 9228-2323" },
+            { name: "Titus", email: "titus@chanenshotel.com", phone: "+65 8111-0728" },
+            { name: "Joy", email: "joy@chanenshotel.com", phone: "+65 9721-0042" },
+            { name: "Sarah", email: "sarah@chanenshotel.com", phone: "+65 8250-7711" },
+            { name: "Ashley", email: "ashley@chanenshotel.com", phone: "+65 8681-7055" }
+        ];
+
+
+        function showContact(index) {
+            const staffs = staff[index];
+            const contactContainer = document.getElementById("contactContainer");
+            document.getElementById("contactName").innerText = "Name: " + staffs.name;
+            document.getElementById("contactEmail").innerText = "Email: " + staffs.email;
+            document.getElementById("contactPhone").innerText = "Phone: " + staffs.phone;
+            contactContainer.style.display = "block";
+        }
+
+
+
+        function closeContact() {
+            const contactContainer = document.getElementById("contactContainer");
+            contactContainer.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>    <section>
+    <nav class="navbar">
+        <div class="content">
+            <img src="../Img/chanenslogo.PNG" class="logo">
+            <ul class="menulist">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+</section>
+<script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menulist");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide")
+    }
+
+</script>
+    <video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+height: 650px;
+object-fit: cover;" id="main">
+        <source src="../Mp4/staff.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:100%">
+            <p class="home"><a href="chanens index.html" class="hyperlink">Home</a>> Our Staff
+        </div>
+        <div class="w3-col w3-container " style="width:100%">
+            <h1 class="Dinningword">Our Staff</h1>
+        </div>
+
+    </div>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:10%"></div>
+        <div class="w3-col w3-container " style="width:35%">
+            <input type="text" id="searchInput" class="w3-input" placeholder="Search for a Staff...">
+        </div>
+        <br><br><br>
+
+        <div class="w3-row">
+
+            <div class="w3-col w3-container" style="width:15%"></div>
+            <div class="w3-card">
+                <div class="w3-col w3-container" style="width: 25%">
+                    <label class="Welcome">Our Founder</label>
+                    <img src="../Img/staff1.jpg" class="image" onclick="showContact(0)">
+                    <h3 class="rightzz">Iggy</h3>
+                </div>
+            </div>
+            <div class="w3-card">
+                <div class="w3-col w3-container" style="width: 25%">
+                    <label class="Welcome">Co-Founder</label>
+                    <img src="../Img/staff2.jpg" class="image" onclick="showContact(1)">
+                    <h3 class="rightzz">Rachel</h3>
+                </div>
+            </div>
+
+
+            <div class="w3-card">
+                <div class="w3-col w3-container" style="width: 25%">
+                    <label class="Welcome">Co-Founder</label>
+                    <img src="../Img/staff3.jpg" class="image" onclick="showContact(2)">
+                    <h3 class="rightzz">Titus</h3>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width:15%"></div>
+                <div class="w3-card">
+                    <div class="w3-col w3-container" style="width: 25%">
+                        <label class="Welcome">Managment Team Leader</label>
+                        <img src="../Img/staff4.jpg" class="image" onclick="showContact(3)">
+                        <h3 class="rightzz">Joy</h3>
+                    </div>
+                </div>
+                <div class="w3-card">
+                    <div class="w3-col w3-container" style="width: 25%">
+                        <label class="Welcome">Managment Team Assistant</label>
+
+                        <img src="../Img/staff5.jpg" class="image" onclick="showContact(4)">
+                        <h3 class="rightzz">Sarah</h3>
+                    </div>
+                </div>
+
+
+                <div class="w3-card">
+                    <div class="w3-col w3-container" style="width: 25%">
+                        <label class="Welcome">Managment Team Supervisor</label>
+                        <img src="../Img/staff6.jpg" class="image " onclick="showContact(5)">
+                        <h3 class="rightzz">Ashley</h3>
+                    </div>
+                </div>
+
+
+                <div class="w3-row">
+                    <div class="w3-col w3-container" style="width:15%"></div>
+                    <div class="w3-col w3-container" style="width:70%">
+                        <hr>
+                    </div>
+                    <div class="w3-col w3-container" style="width:15%"></div>
+                </div>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-col w3-container" style="width:15%"></div>
+                    <div class="w3-col w3-container" style="width:35%">
+              
+                        <p class="contact">CONTACT US</p>
+                        <br>
+                        <p class="contact2">+65 6666 9999</p>
+                        <br>
+                        <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+                        <br>
+                        <p class="contact2">tchinfo@chanenshotel.com</p>
+              
+                    </div>
+              
+              
+              
+                    <div class="w3-col w3-container" style="width:35%">
+                        <p class="contact">GET IN TOUCH</p>
+                        <br>
+                        <p class="contact2">Sign up now to receive special offers and promotions</p>
+              
+                        <br>
+                        <form action="../contact us.html" method="post">
+                            <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                                class="submit-button">
+                        </form>
+                        <h2></h2>
+              
+              
+              
+                    </div>
+                    <div class="w3-col w3-container" style="width:15%"></div>
+                </div>
+                <br>
+                <div class="w3-row">
+                  <div class="w3-col w3-container" style="width:18.5%"></div>
+                  <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+                  <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+                  <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+                  <div class="w3-col w3-container" style="width:35%"></div>
+              
+              </div>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-col w3-container" style="width:27.5%"></div>
+                    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                                src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+                    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                                src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+                    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                                src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+                    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                                src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+                    <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                                src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+              
+              
+              
+              
+              
+                    <div class="w3-col w3-container" style="width:25%"></div>
+              
+              
+              
+              
+                </div>
+
+        <div class="contact-container" id="contactContainer">
+            <div class="contact-content">
+                <span class="close-btn" onclick="closeContact()">×</span>
+                <h2 class="Welcome">Contact Information</h2>
+                <p class="contacting" id="contactName"></p>
+                <p class="contacting" id="contactEmail"></p>
+                <p class="contacting" id="contactPhone"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const bg = document.getElementById('main')
+        window.addEventListener('scroll', function () {
+            bg.style.backgroundSize = 140 - +window.pageYOffset / 12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+        const searchInput = document.getElementById('searchInput');
+        const departmentCards = document.querySelectorAll('.w3-card');
+        // This will trigger whenever something is input//
+        searchInput.addEventListener('input', () => {
+            // It does not matter if its upper or lower case//
+            const searchTerm = searchInput.value.toLowerCase();
+            // loop through each staff div//
+            departmentCards.forEach(card => {
+                const departmentName = card.querySelector('h3').textContent.toLowerCase();
+                // REtrive h3 in every div of staff//
+                if (departmentName.includes(searchTerm)) {
+                    //searchTerm is included in the departmentName. If the department name includes the search term, it means it matches the search, the card will show//
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }//Else hide all the cards//
+            });
+        });
+
+
+        const ourFounderSection = document.getElementById('ourFounderSection');
+        if (searchTerm && !staff.some(s => s.name.toLowerCase().includes(searchTerm))) {
+            ourFounderSection.style.display = 'none';
+        } else {
+            ourFounderSection.style.display = 'block';
+        };
+
+        window.addEventListener('scroll', function () {
+            const bg = document.getElementById('main');
+            bg.style.backgroundSize = '100%'; // Set a fixed background size
+            bg.style.opacity = 1 - window.pageYOffset / 700;
+        });
+
+
+    </script>
+    <br><br>
+    <footer>
+        <p>&copy; 2023 Chanens Hotel. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

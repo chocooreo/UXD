@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Amenities Booking</title>
+  <link rel="stylesheet" href="stylenine.css">
+  <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+  <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+  <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+  <link rel="stylesheet" href="ashbook.css">
+  <link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="../mp4/ash3.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <section>
+    <nav class="navbar">
+      <div class="content">
+        <img src="../Img/chanenslogo.PNG" class="logo">
+        <ul class="menulist">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li style="color: white;"><a href="../index.html">HOME</a></li>
+          <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+          <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+          <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+              AND EVENTS</a></li>
+          <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+          <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <script>
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menulist");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = () => {
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+    }
+    cancelBtn.onclick = () => {
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide")
+    }
+  </script>
+
+  <script>
+    window.alert("Booking hours are 2 hours long.")
+  </script>
+
+  <br>
+  <form action="amenitiessuccessfulbooking.html" style="margin-top:200px;">
+    <h2 class="Welcome">CHANENS HOTEL BOOKING</h2>
+    <div id="bookingform">
+
+      <div id="formgrid">
+
+        <div id="facility">
+          <p>Facilities Chosen:</p>
+          <span id="type"></span>
+        </div>
+
+        <div id="date">
+          <p><label for="dates"><i class="fa fa-calendar" style="font-size:26px"></i></label></p>
+          <input class="w3-input" id="dates" type="date" required>
+        </div>
+
+        <div id="time">
+          <p><label for="times"><i class='fas fa-clock' style='font-size:26px'></i></label></p>
+          <input class="w3-input" id="times" type="time" min="10.00" max="20.00"
+            title="Please select a timing between 10am to 8pm" required>
+        </div>
+
+
+        <script>
+          // Get the time input element
+          const timeInput = document.getElementById('times');
+
+          // Function to check the validity of the selected time
+          function validateTime() {
+            const selectedTime = timeInput.value;
+
+            // Split the selected time into hours and minutes
+            const [hours, minutes] = selectedTime.split(':');
+
+            // Convert hours to a number (string to integer)
+            const selectedHour = parseInt(hours);
+
+            // Check if the selected hour is outside the allowed range (10 to 20)
+            if (selectedHour < 10 || selectedHour > 20) {
+              timeInput.setCustomValidity('Please select a time between 10 AM and 8 PM (both inclusive).');
+            } else {
+              timeInput.setCustomValidity('');
+            }
+          }
+
+          // Add an event listener to the input to check the validity when it changes
+          timeInput.addEventListener('input', validateTime);
+        </script>
+
+
+        <div id="name">
+          <p><label for="names">Name:</label></p>
+          <input class="w3-input" type="text" id="names" required>
+        </div>
+
+        <div id="email">
+          <p><label for="emails">Email:</label></p>
+          <input class="w3-input" type="email" id="emails" required>
+        </div>
+
+        <div id="contact">
+          <p><label for="contacts">Contact:</label></p>
+          <input class="w3-input" type="txtbox" maxlength="12" id="contacts"
+            title="Enter Country Code (e.g. +65 88881234)" pattern="[+]{1}[1-9]{2}[ ]{1}[0-9]{8}" required>
+        </div>
+
+        <div id="roomnumber">
+          <p><label for="roomnumbers">Your Room Number:</label></p>
+          <input class="w3-input" type="text" id="roomnumbers" required>
+        </div>
+
+        <div id="guests">
+          <p><label for="numberofguests">Number Of Guests:</label></p>
+          <input class="w3-input" type="number" name="numberofguests" id="numberofguests" min="1" max="10" required>
+        </div>
+
+        <div id="requests">
+          <p><label for="request">Any Requests:</label></p>
+          <input class="w3-input" type="txtarea" id="request">
+        </div>
+
+      </div>
+
+      <div id="terms">
+        <label>
+          <input type="checkbox" id="myCheck" name="test" required>
+          &nbsp;&nbsp; I agree to the
+          <i><b><u><a href="TermandCon.html">
+                  Terms and Conditions.
+                </a></u></b></i>
+        </label>
+      </div>
+
+      <div id="submit">
+        <button class="submit-button" style="width: auto;">SUBMIT</button>
+      </div>
+
+    </div>
+  </form>
+  <br>
+
+  <br>
+
+
+  </div>
+
+
+  <script>
+    window.addEventListener('load', function () {
+
+
+      const type = localStorage.getItem('type');
+      document.getElementById('type').innerHTML = type;
+
+
+    });
+
+    function myFunction() {
+      var x = document.getElementById("myCheck").required;
+      document.getElementById("demo").innerHTML = x;
+    }
+
+  </script>
+
+  <script>
+    // Get the date input element
+    const dateInput = document.getElementById('dates');
+
+    // Get the current date in the local time zone
+    const currentDate = new Date().toLocaleDateString('en-CA'); // Replace 'en-CA' with your desired locale
+
+    // Set the minimum attribute of the date input to the current date
+    dateInput.setAttribute('min', currentDate);
+  </script>
+
+
+</body>
+
+</html>

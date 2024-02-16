@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Chanens Hotel | Payment</title>
+    <link rel="stylesheet" href="styleseven.css">
+    <link rel="stylesheet" href="stylesix.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+	<section>
+		<nav class="navbar">
+			<div class="content">
+				<img src="../Img/chanenslogo.PNG" class="logo">
+				<ul class="menulist">
+					<div class="icon cancel-btn">
+						<i class="fas fa-times"></i>
+					</div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+				</ul>
+				<div class="icon menu-btn">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<script>
+		const navbar = document.querySelector(".navbar");
+		const menu = document.querySelector(".menulist");
+		const menuBtn = document.querySelector(".menu-btn");
+		const cancelBtn = document.querySelector(".cancel-btn");
+		menuBtn.onclick = () => {
+			menu.classList.add("active");
+			menuBtn.classList.add("hide");
+		}
+		cancelBtn.onclick = () => {
+			menu.classList.remove("active");
+			menuBtn.classList.remove("hide")
+		}
+	
+	</script>
+    <br><br><br>    <br>
+
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+          <source src="../Mp4/hotel.mp4" type="video/mp4">
+        </video>
+    </div>  <br><br><br>  
+    <form action="Finished.html">
+    <div class="w3-container">
+        <div class="container ">
+            <div class="w3-row">
+            <div class="w3-col w3-container" style="width:25%"></div>
+            <div class="w3-col w3-container" style="width:50%"><p class="Welcome">Payment Page</p></div>
+            <div class="w3-col w3-container" style="width:25%"></div>
+    </div>
+
+
+
+    <div class="w3-row ">
+        <div class="w3-col w3-container" style="width:25%"></div>
+        <div class="w3-col w3-container" style="width:50%">
+            
+            
+            <div class="credit-card credit-card-container">
+                <div class="w3-row">
+                    <div class="w3-col w3-container" style="width:62%">
+                <div class="card-number" >Credit Card</div>
+                </div>
+                <div class="w3-col w3-container" style="width:38%">
+                    <img src="" class="image" id="img">
+                    </div>
+                    </div>
+                    <br>
+                    <div class="w3-row">
+                        <div class="w3-col w3-container" style="width:100%">
+            <div class="card-number" id="cardNumber">**** **** **** ****</div>
+            </div>
+            <br><br><br>
+            <div class="w3-row">
+                <div class="w3-col w3-container" style="width:65%">
+                    
+                    <div class="card-info">
+                        Expiry Date:&#160;<span class="expiry-date" id="expiryDate"> MM/YY</span>
+                  </div>
+                </div>
+                <div class="w3-col w3-container" style="width:30%">
+              Cvv &#160;<span class="cvv" id="cvv-display"> ***</span>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+        <div class="w3-col w3-container" style="width:20%"></div>
+</div>
+    </div>
+    <br>
+    <div class="w3-row ">
+        <div class="w3-col w3-container" style="width:10%"></div>
+      
+        <div class="w3-col w3-container" style="width:48%">
+            <label class="first">Enter Your Card Please</label>
+            <select type="select" class="w3-select" id="cardSelect">
+                <option value="" disabled selected>Choose Your Card</option>
+                <option value="master">Master Card</option>
+                <option value="visa">Visa</option>
+                <option value="amex">AMEX</option>
+                <option value="citi">Citi</option>
+            </select>
+            </div>
+            <div class="w3-col w3-container" style="width:40%">
+                <label class="Welcome">Amount: <span id="Amount"></span></label>
+    
+            </div>
+    </div>
+    <br>
+    <div class="w3-row ">
+        <div class="w3-col w3-container" style="width:10%"></div>
+      
+        <div class="w3-col w3-container" style="width:72%">
+            <label class="first">Credit Card Number</label>
+            <input class="w3-input pop" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); "  maxlength="16" id="cardNumber" required>
+            </div>
+     
+             
+    
+
+    </div>
+    <div class="w3-row ">
+        <div class="w3-col w3-container" style="width:10%"></div>
+      
+        <div class="w3-col w3-container" style="width:37%">
+            <label class="first">CVV</label>
+            <input class="w3-input" type="number" id="cvv" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); displayCVV(this)" maxlength="3" required>  
+            </div>
+            <div class="w3-col w3-container" style="width:37%">
+                <label class="first">Expriry Date</label>
+                <input class="w3-input" type="number" pattern="[0-9]{4}"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); displayexp(this);" maxlength = "4"  required>
+                </div>
+             
+    
+
+    </div>
+<br>
+
+    <div class="w3-row ">
+        <div class="w3-col w3-container" style="width:10%"></div>
+        <div class="w3-col w3-container" style="width:30%"><input type="submit" class="submit-button" onclick="saving()"></div>
+    <br>
+
+
+    </div>
+    <br>
+</form>
+    <script>
+        function saving() {
+
+
+           const save1 = document.getElementById('cvv-display');
+           const save = document.getElementById('expiryDate');
+           const save2 = document.getElementById('cardNumber');
+           localStorage.setItem("one", save)
+           localStorage.setItem("two", save1)
+           localStorage.setItem("three", save12)
+        }
+
+
+        function displayCVV(input) {
+            const cvvDisplay = document.getElementById('cvv-display');
+            const cvv = input.value;
+            cvvDisplay.textContent = cvv;
+        }
+
+        function displayexp(input) {
+            const expdis = document.getElementById('expiryDate');
+            const exp = input.value;
+          
+
+            if (exp.length > 1) {
+                modifiedExp = exp.slice(0, 2) + '/' + exp.slice(2);
+            }
+
+            expdis.textContent = modifiedExp;
+        }
+
+
+   function handleCardNumberInput(event) {
+    const cardNumberDisplay = document.getElementById('cardNumber');
+    const inputCardNumber = event.target.value;
+    const maskedCardNumber = maskCardNumber(inputCardNumber);
+    cardNumberDisplay.textContent = maskedCardNumber;
+}
+
+function maskCardNumber(cardNumber) {
+    const chunkSize = 4;
+    const pattern = new RegExp(`.{1,${chunkSize}}`, 'g');
+    const maskedChunks = cardNumber.slice(0, 16).match(pattern);
+    return maskedChunks ? maskedChunks.join(' ') : '';
+}
+
+
+document.querySelector('.pop').addEventListener('input', handleCardNumberInput);
+
+
+
+        function handleCardSelection() {
+            var selectElement = document.getElementById('cardSelect');
+            var imageElement = document.getElementById('img');
+            var selectedCard = selectElement.value;
+
+            if (selectedCard === 'master') {
+                imageElement.src = '../Img/master.png';
+            } else if (selectedCard === 'visa') {
+                imageElement.src = '../Img/visa.png';
+            } else if (selectedCard === 'amex') {
+                imageElement.src = '../Img/amex.png';
+            }
+            else if (selectedCard === 'citi') {
+                imageElement.src = '../Img/citi.png';
+            }
+        }
+
+        document.getElementById('cardSelect').addEventListener('change', handleCardSelection);
+
+
+
+
+        const cardImages = [
+          "../Img/credit.avif",
+          "../Img/credit2.avif",
+          "../Img/credit3.jpg",
+          "../Img/credit4.jpg",
+          "../Img/credit5.avif",
+          
+
+        ];
+      
+        window.addEventListener('DOMContentLoaded', function () {
+
+          var creditCardContainer = document.querySelector('.credit-card-container'); 
+          var randomIndex = Math.floor(Math.random() * cardImages.length);
+          var backgroundImageValue = `url("${cardImages[randomIndex]}")`;
+          creditCardContainer.style.backgroundImage = backgroundImageValue;
+      
+
+
+          var amountElement = document.getElementById('Amount');
+          var amount = localStorage.getItem("amount");
+          amountElement.textContent = amount;
+        });
+
+
+        
+      </script>
+      
+</body>
+</html>
