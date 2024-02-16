@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Chanens Hotel | Awards</title>
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+    <link rel="stylesheet" href="../navbar and footer codes/footer.css">
+    <link rel="stylesheet" href="awards.css">
+    <link rel="stylesheet" href="../navbar and footer codes/styleone.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ace97ef96.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <img src="chanenslogo.PNG" class="logo">
+                <ul class="menulist">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <video autoplay loop muted playsinline class="w3-image" style="    width: 1600px;
+    height: 650px;
+    object-fit: cover;" id="main">
+        <source src="Hllo.mp4" type="video/mp4">
+    </video>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide")
+        }
+        const bg = document.getElementById('main')
+        window.addEventListener('scroll', function () {
+            bg.style.backgroundSize = 140 - +window.pageYOffset / 12 + '%';
+            bg.style.opacity = 1 - +window.pageYOffset / 700 + '';
+        })
+    </script>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:25%">
+            <p class="home"><a href="index.html" class="hyperlink">Home</a> ><a>Our Awards</a>
+        </div>
+
+    </div>
+
+        <h1 style="text-align: center;" class="Welcome">-Hotel Awards-</h1>
+        <p style="text-align: center;">Welcome to our hotel awards page. Check out our achievements and accolades.</p>
+
+    <main class="flex-container">
+        <section class="award">
+            <img src="award1.jpg" alt="Award 1">
+            <h2>-Best Luxury Hotel 2023-</h2>
+            <p class="first">We take great pride in being honored as the Best Luxury Hotel of the Year 2023,
+                acknowledging our exceptional services and commitment to providing an extraordinary guest experience.
+            </p>
+        </section>
+
+        <section class="award">
+            <img src="award2.jpg" alt="Award 2">
+            <h2>-Excellence in Hospitality Award 2023-</h2>
+            <p class="first">Thanks to the valuable reviews and ratings provided by our esteemed guests,
+                we are delighted to announce that our hotel has been honored with the prestigious
+                Excellence in Hospitality Award for the year 2023.</p>
+        </section>
+
+        <section class="award">
+            <img src="award3.jpg" alt="Award 3">
+            <h2>-Cultural Heritage Preservation Award-</h2>
+            <p class="first">The hotel is proud to boast the Cultural Heritage Preservation Award,
+                recognizing its commitment to conserving cultural heritage and promoting sustainability.
+                The award inspires continued efforts in safeguarding regional history and traditions,
+                offering guests a meaningful and authentic experience.</p>
+        </section>
+    </main>			<div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:70%">
+            <hr>
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:15%"></div>
+        <div class="w3-col w3-container" style="width:35%">
+  
+            <p class="contact">CONTACT US</p>
+            <br>
+            <p class="contact2">+65 6666 9999</p>
+            <br>
+            <p class="contact2">1 Oxley Rise, Singapore 238714</p>
+            <br>
+            <p class="contact2">tchinfo@chanenshotel.com</p>
+  
+        </div>
+  
+  
+  
+        <div class="w3-col w3-container" style="width:35%">
+            <p class="contact">GET IN TOUCH</p>
+            <br>
+            <p class="contact2">Sign up now to receive special offers and promotions</p>
+  
+            <br>
+            <form action="contact us.html" method="post">
+                <input class="w3-input " id="email" placeholder="Email" type="text"><br><input type="submit"
+                    onclick="sudmit()" class="submit-button">
+            </form>
+            <h2></h2>
+  
+  
+  
+        </div>
+        <div class="w3-col w3-container" style="width:15%"></div>
+    </div>
+    <br>
+    <div class="w3-row">
+      <div class="w3-col w3-container" style="width:18.5%"></div>
+      <div class="w3-col w3-container" style="width:17%"><a href="AboutUsStaff.html" class="hyperlink5">Our Staff</a></div>
+      <div class="w3-col w3-container" style="width:20%"><a href="../contact us.html" class="hyperlink5">Contact Us</a></div>
+      <div class="w3-col w3-container" style="width:18%"><a href="../awards.html" class="hyperlink5">Awards</a></div>
+      <div class="w3-col w3-container" style="width:35%"></div>
+  
+  </div>
+    <br>
+    <div class="w3-row">
+        <div class="w3-col w3-container" style="width:27.5%"></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Face.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Insta.webp" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Twitter.png" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/YT.jpg" class="instag w3-image"></a></div>
+        <div class="w3-col w3-container" style="width:10%"><a href="" target="_blank"><img
+                    src="../navbar and footer codes/Link.png" class="instag w3-image"></a></div>
+  
+  
+  
+  
+  
+        <div class="w3-col w3-container" style="width:25%"></div>
+  
+  
+  
+  
+    </div>
+    <script>
+
+        function sudmit() {
+
+            const email = document.getElementById('email').value
+            localStorage.setItem("EMAIL", email);
+            return
+        }
+    </script><br><br>
+    <footer>
+        <p>&copy; 2023 Chanens Hotel. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

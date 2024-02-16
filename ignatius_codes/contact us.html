@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Chanens Hotel | Contact Us</title>
+    <link rel="stylesheet" class="w3-image w3-xlarge" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="contact us.css">
+    <link rel="stylesheet" href="../navbar and footer codes/navbar.css">
+</head>
+
+<body>
+
+
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="ash.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section>
+        <nav class="navbar">
+            <div class="content">
+                <img src="chanenslogo.PNG" class="logo">
+                <ul class="menulist">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li style="color: white;"><a href="../index.html">HOME</a></li>
+                        <li style="color: white;"><a href="../Rachel_code/RachelPages.html">ROOMS AND SUITES</a></li>
+                        <li style="color: white;"><a href="../JunSong_code/MainPageDinning.html">DINING</a></li>
+                        <li style="color: white;"><a href="../Brendon_EventsPage/Meeting and Amenities.html">MEETINGS
+                                AND EVENTS</a></li>
+                        <li style="color: white;"><a href="../Ashley_code/amentitesAsh.html">AMENITIES</a></li>
+                        <li><a href="../Rachel_code/RachBook.html"><button class="book">BOOK NOW</button></a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menulist");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+        }
+        cancelBtn.onclick = () => {
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide")
+        }
+    </script>
+    <div class="w3-container" style="padding-top: 300px;">
+        <div class="w3-row">
+            <div class="w3-col w3-container" style="width:100%">
+                <div class="container ">
+                    <div class="container27">
+                        <h1 class="conhead">-CONTACT US-</h1>
+
+                        <div class="contact-box">
+                            <div class="contact-left">
+                                <h3 class="req">Send your request</h3><br><br>
+                                <form onsubmit="thanks()">
+
+                                    <div class="inputrow">
+                                        <div class="inputgrp">
+                                            <label>Name</label>
+                                            <input class="esub" type="text" required>
+                                        </div>
+                                        <div class="inputgrp">
+                                            <label>Mobile</label>
+                                            <input class="esub" type="tel" title="Enter Country Code (e.g. +65 88881234)" pattern="[+]{1}[1-9]{2}[ ]{1}[0-9]{8}" required>
+                                        </div>
+                                    </div>
+                                    <div class="inputrow">
+                                        <div class="inputgrp">
+                                            <label>Email</label>
+                                            <input class="esub" type="email" required>
+                                        </div>
+                                        <div class="inputgrp">
+                                            <label>Subject</label>
+                                            <input class="esub" type="text" required>
+                                        </div>
+                                    </div>
+
+                                    <label>Message</label>
+                                    <textarea rows="5" required></textarea>
+
+                                    <button class="submitbtn" type="submit">SUBMIT</button>
+
+                                </form>
+                                <script>
+                                    function thanks() {
+                                        alert('Thank you for contacting us. Have a nice day!');
+                                        window.location.href="index.html";
+                                    }
+                                </script>
+                                
+        
+                            </div>
+                            <div class="contact-right">
+                                <h3 class="req">Reach Us</h3>
+
+                                <div class="reachus">
+                                    <br><br>
+                                    <div>
+                                        <p><strong>Email</strong></p>
+                                        <p>tchinfo@chanenshotel.com</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Phone</strong></p>
+                                        <p>+65 6666 9999</p>
+                                    </div>
+                                    <div>
+                                        <p><strong>Location</strong></p>
+                                        <p>1 Oxley Rise, Singapore 238714</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <br>
+
+
+            </div>
+
+
+</body>
+<script>
+
+
+</script>
+
+</html>

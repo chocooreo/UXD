@@ -1,0 +1,262 @@
+body {
+    background-color: white;
+}
+
+* {
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: adam;
+    src: url(Adam-Medium.ttf)
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.hotel-info {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.image img {
+    width: 115%;
+    height: 115%;
+}
+
+.content {
+    flex: 2;
+    padding: 0 10px;
+}
+
+.heading4 {
+    top: 0%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    width: 80%;
+}
+
+.container {
+    position: relative;
+    height: 80vh;
+}
+
+.container .slide-container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+}
+
+.container .slide-container .slide .content {
+    flex: 1 1 350px;
+    animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+}
+
+.container .slide-container .slide .content .heady {
+    font-size: 45px;
+    font-family: vogue;
+}
+
+.container .slide-container .slide .content .par {
+    font-size: 20px;
+}
+
+.container .slide-container .slide .image {
+    flex: 1 1 450px;
+}
+
+.container .slide-container .slide .image img {
+    width: 100%;
+    animation: slideImage .4s linear .6s backwards;
+}
+
+@keyframes slideImage {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+.container .slide-container .slide .content .btn {
+    margin-top: 10px;
+    display: inline-block;
+    background: #1c1c1c;
+    color: white;
+    font-size: 17px;
+    padding: 9px 40px;
+    text-decoration: none;
+}
+
+.container .slide-container .slide .content .btn:hover {
+    color: gold;
+}
+
+.container .slide-container {
+    display: none;
+}
+
+.container .slide-container.active {
+    display: block;
+}
+
+.container #prev,
+.container #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    height: 50px;
+    width: 40px;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.container #prev:hover,
+.container #next:hover {
+    background: #666;
+}
+
+.container #prev {
+    left: 20px;
+}
+
+.container #next {
+    right: 20px;
+}
+
+
+.roomsandsuites {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.headers {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.room {
+    margin: 10px;
+    width: 33%;
+    padding-bottom: 50px;
+}
+
+.roomimg {
+    width: 100%;
+}
+
+.rtext {
+    font-size: 20px;
+}
+
+.rhead {
+    font-size: 25px;
+}
+
+.rb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roombtn {
+    font-weight: bold;
+    background: gold;
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 35px;
+}
+
+.roombtn:hover {
+    color: black;
+    border: 1px solid gold;
+    background-color: white;
+}
+
+.esub {
+    font-size: 18px;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+}
+
+.reviews {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revbox {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    height: 50vh;
+}
+
+.user {
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.igposts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.igp,
+.iguser {
+    display: flex;
+}
+
+.image {
+    overflow-y: hidden;
+    padding-right: 20px;
+}
+
+.image:hover{
+    opacity: 70%;
+}
