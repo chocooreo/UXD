@@ -1,0 +1,46 @@
+body {
+    background-color: white;
+  }
+  
+  * {
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+header {
+    color: black;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .flex-container {
+    display: flex;
+  }
+  
+  .award {
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .award img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .award h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
